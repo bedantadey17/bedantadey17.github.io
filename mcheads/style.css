@@ -1,0 +1,93 @@
+body {
+    background-image: url('/images/bg_mcheads.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: #f0f0f0;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  h1 {
+    font-weight: 600;
+    font-size: 36px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  p {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+
+  
+  #mc-username {
+    display: block;
+    margin: 0 auto;
+    font-family:'VT323', monospace;
+    width: 200px;
+    height: 30px;
+    font-size: 22px;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+    font-family:'VT323', monospace;
+    background-color: #ffffff;
+    color: #242323;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  button:active {
+    background-color: #008cff;
+    box-shadow: 0 0 5px #008cff;
+  }
+  
+  
+  #mc-head {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    border: 5px solid #00b8d4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00b8d4;
+  }
+  
+  #save-button {
+    display: none;
+    background-color: #008cff;
+    margin: 10px auto;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    color: #f0f0f0;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #show-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  #footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 10px;
+    color: #ccc;
+  }
+  
