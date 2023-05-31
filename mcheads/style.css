@@ -46,6 +46,10 @@ body {
     cursor: pointer;
     margin-bottom: 10px;
   }
+  button:hover {
+    background-color:#ccc;
+    transition: background-color 0.3s ease;
+  }
   button:active {
     background-color: #008cff;
     box-shadow: 0 0 5px #008cff;
@@ -59,21 +63,29 @@ body {
     background-size: cover;
     background-position: center;
     margin-top: 20px;
-    border: 5px solid #00b8d4;
+    border: 5px solid #008cff;
     border-radius: 10px;
-    box-shadow: 0 0 10px #00b8d4;
+    box-shadow: 0 0 10px #008cff;
   }
   
   #save-button {
     display: none;
-    background-color: #008cff;
+    background-color: #fff;
     margin: 10px auto;
     padding: 8px 16px;
     border-radius: 5px;
     border: none;
-    color: #f0f0f0;
+    color: #000;
     font-size: 20px;
     cursor: pointer;
+  }
+  #save-button:hover {
+    background-color:#ccc;
+    transition: background-color 0.3s ease;
+  }
+  #save-button:active {
+    background-color: #008cff;
+    box-shadow: 0 0 5px #008cff;
   }
   
   #show-buttons {
