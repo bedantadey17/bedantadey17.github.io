@@ -13,7 +13,7 @@ darkModeToggle.addEventListener('click', () => {
   localStorage.setItem('darkMode', isDarkMode);
 });
 
-/* newsletter */
+// newsletter
 document.addEventListener("DOMContentLoaded", function() {
   var form = document.getElementById("newsletterForm");
   var subscriptionStatus = document.getElementById("subscription-status");
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     subscribeEmail(email);
     
-    subscriptionStatus.textContent = "Subscribed! You should now receive blogposts directly in your email.";
+    subscriptionStatus.textContent = "Successfully subscribed to the newsletter!";
     emailInput.value = "";
   });
 

@@ -22,17 +22,17 @@ body {
   .logo {
     font-size: 29px;
     margin-top: 10px;
-    font-family: 'Notable', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
   }
   
   button {
-    font-family: "Courier New", Courier, monospace;
+    font-family: "DM Mono", monospace;
     padding: 10px 20px;
     font-size: 14px;
     background-color: #fff;
     color: #000;
     border: 2px solid #000;
-    border-radius: 4px;
+    border-radius: 8px;
     margin-top: 10px;
     cursor: pointer;
   }
@@ -45,18 +45,21 @@ body {
 
   .project-buttons {
     display: flex;
+    font-family: "DM Mono", monospace;
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
+    border-radius: 8px;
   }
   
   .project-button {
     padding: 10px 20px;
+    font-family: "DM Mono", monospace;
     background-color: #fff;
     font-size: 15.5px;
     color: #000;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 8px;
     margin: 10px 0;
     transition: background-color 0.3s ease;
     border: 2px solid #000;
@@ -77,13 +80,13 @@ body {
   }
   
   p {
-    font-family: Consolas, monospace;
+    font-family: 'DM Mono', monospace;
     font-size: 15.5px;
     margin-bottom: 20px;
   }
   
   footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;

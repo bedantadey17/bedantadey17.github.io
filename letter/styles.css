@@ -22,13 +22,15 @@ body {
   .logo {
     font-size: 29px;
     margin-top: 10px;
-    font-family: 'Notable', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
   }
   
   .buttons {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    border-radius: 8px;
+    font-family: "DM Mono", monospace;
   }
   
   .buttons .cta-button {
@@ -37,7 +39,7 @@ body {
     background-color: #fff;
     color: #000;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 8px;
     margin: 0 10px;
     transition: background-color 0.3s ease;
     border: 2px solid #000;
@@ -49,13 +51,13 @@ body {
   
   /* button of dark mode */
   button {
-    font-family: "Courier New", Courier, monospace;
+    font-family: "DM Mono", monospace;
     font-size: 14px;
     padding: 10px 20px;
     background-color: #fff;
     color: #000;
     border: 2px solid #000;
-    border-radius: 4px;
+    border-radius: 8px;
     margin-top: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -66,13 +68,13 @@ body {
   }
   
   .main-toggle {
-    font-family: "Courier New", Courier, monospace;
+    font-family: "DM Mono", monospace;
     font-size: 14px;
     padding: 10px 20px;
     background-color: #fff;
     color: #000;
     border: 2px solid #000;
-    border-radius: 4px;
+    border-radius: 8px;
     margin: 0 10px;
     transition: background-color 0.3s ease;
   }
@@ -94,11 +96,11 @@ body {
   p {
     font-size: 15.5px;
     margin-bottom: 20px;
-    font-family: "Consolas", monospace;
+    font-family: "DM Mono", monospace;
   }
   
   footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -146,6 +148,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    font-family: "DM Mono", monospace;
   }
   
   .newsletter-input input[type="email"] {
@@ -153,19 +156,19 @@ body {
     padding: 11px;
     width: 300px;
     
-    font-family: "Courier New", Courier, monospace;
+    font-family: "DM Mono", monospace;
     font-size: 14px;
-    border-radius: 4px;
+    border-radius: 8px;
   }
   
   .newsletter-input button {
-    font-family: "Courier New", Courier, monospace;
+    font-family: "DM Mono", monospace;
     padding: 10px 20px;
     font-size: 14px;
     background-color: #fff;
     color: #000;
     border: 2px solid #000;
-    border-radius: 4px;
+    border-radius: 8px;
     margin-left: 10px;
     cursor: pointer;
   }
@@ -182,11 +185,12 @@ body {
   
   button[type="submit"] {
     padding: 10px 20px;
+    font-family: "DM Mono", monospace;
     font-size: 15.5px;
     background-color: #fff;
     color: #000;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 8px;
     transition: background-color 0.3s ease;
     border: 2px solid #000;
   }

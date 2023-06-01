@@ -19,69 +19,33 @@ body {
     margin-bottom: 10px;
   }
   
+  p {
+    font-size: 15.5px;
+    margin-bottom: 20px;
+    font-family: "DM Mono", monospace;
+  }
+
   .logo {
     font-size: 29px;
     margin-top: 10px;
     font-family: 'Josefin Sans', sans-serif;
   }
   
-  .buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    border-radius: 8px;
-    font-family: "DM Mono", monospace;
-  }
-  
-  .buttons .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #000;
-    text-decoration: none;
-    border-radius: 8px;
-    margin: 0 10px;
-    transition: background-color 0.3s ease;
-    border: 2px solid #000;
-  }
-  
-  .buttons .cta-button:hover {
-    background-color: #ddd;
-  }
-  
-  /* button of dark mode */
   button {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 14px;
+    font-family: "DM Mono", monospace;
     padding: 10px 20px;
+    font-size: 14px;
     background-color: #fff;
     color: #000;
     border: 2px solid #000;
     border-radius: 8px;
     margin-top: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
   }
-
+  
   button:hover {
     background-color: #ddd;
-  }
-  
-  .main-toggle {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 14px;
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #000;
-    border: 2px solid #000;
-    border-radius: 8px;
-    margin: 0 10px;
-    font-family: "DM Mono", monospace;
     transition: background-color 0.3s ease;
-  }
-  
-  .main-toggle:hover {
-    background-color: #ddd;
   }
   
   main {
@@ -94,10 +58,36 @@ body {
     font-family: "Courier New", Courier, monospace;
   }
   
-  p {
-    font-size: 15.5px;
-    margin-bottom: 20px;
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .link-button {
+    padding: 10px 20px;
     font-family: "DM Mono", monospace;
+    background-color: #fff;
+    font-size: 15.5px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+  }
+  
+  .link-button i {
+    margin-right: 10px;
+  }
+  
+  .link-button:hover {
+    background-color: #ddd;
   }
   
   footer {
@@ -108,7 +98,6 @@ body {
     text-align: center;
     padding: 10px 0;
   }
-  
   
   .dark-mode section {
     background-color: #fff;
@@ -126,14 +115,15 @@ body {
     align-items: center;
     margin-bottom: 40px;
   }
-
-  a {
+  
+  header a {
     color: inherit;
     text-decoration: none;
   }
   
-  a:hover {
+  header a:hover,
+  header a:focus {
     color: inherit;
-    transition: ease-in-out 0.3s
+    text-decoration: none;
   }
   
