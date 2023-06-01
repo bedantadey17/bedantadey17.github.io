@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Bedanta Dey - Newsletter</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header>
+      <h1 class="logo">
+        <a href="/index.html">
+          <i class="fas fa-home"></i>
+        </a>
+        Bedanta Dey
+      </h1>
+      <button id="darkModeToggle">
+        <i id="darkModeIcon" class="fas fa-moon"></i>
+      </button>
+    </header>
+  
+    <main>
+      <section>
+        <h2>Subscribe to the Newsletter</h2>
+        <p>Get productivity blogs and updates straight to your inbox!</p> 
+        <form id="newsletterForm" class="newsletter-form" action="https://script.google.com/macros/s/AKfycbwj_MFbR8HYfTHCu2_PB6MePmWHhGJn6sRYrjKBcGrscVTZq7BlqKdtXY6Fp7cgedE/exec" method="post">
+            <div class="newsletter-input">
+              <input type="email" id="emailInput" name="email" placeholder="Enter your email address..." required>
+            </div>
+            <div class="newsletter-submit">
+              <button type="submit">Subscribe</button><br><br>
+              <p style="font-size: 11px;">By clicking this button, you agree that you will receive mails in your inbox.<br> If you have mistakenly subscribed or wish to unsubscribe in the future, reply "STOPMAIL [your email]" after you have received your first mail.</p>
+
+            </div>
+            <p id="subscription-status"></p>
+          </form>                                   
+      </section>
+    </main>
+      
+  
+    <footer>
+      <p>&copy; 2023 Bedanta Dey & Gray Matter RI. All rights reserved.</p>
+    </footer>
+  
+    <script src="/script.js"></script>
+  </body>
+  </html>
