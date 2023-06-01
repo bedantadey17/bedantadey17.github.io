@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <title>Bedanta Dey</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
@@ -15,8 +16,15 @@
 <!-- uwu -->
 <body>
   <header>
-    <h1 class="logo">Bedanta Dey</h1>
-    <button id="darkModeToggle">Flashbang Toggle</button>
+    <h1 class="logo">
+      <a href="index.html">
+        <i class="fas fa-home"></i>
+      </a>
+      Bedanta Dey
+    </h1>
+    <button id="darkModeToggle">
+      <i id="darkModeIcon" class="fas fa-moon"></i>
+    </button>
   </header>
 
   <main>
@@ -25,7 +33,7 @@
       <p>The site is still under construction. Here be dragons!</p>
     </section>
     <div class="buttons">
-      <a href="/projects/index.html" target="_blank" class="cta-button">Projects</a>
+      <a href="/projects/index.html" class="cta-button">Projects</a>
       <a target="_blank" class="cta-button">Blogs (No Functionality)</a>
     </div>
   </main>
@@ -33,7 +41,7 @@
 
   <footer>
     <p>&copy; 2023 Bedanta Dey & Gray Matter RI. All rights reserved.</p>
-    <p>Version: 0.1.1</p>
+    <p>Version: 0.1.2</p>
     <!-- Version naming scheme: X.Y.Z
     Z is most minor release. As in very minor updates like bug fixes. 
     Y is a slightly major site update, with new features and shit. 
