@@ -56,9 +56,10 @@ body {
     padding: 10px 20px;
     font-family: "DM Mono", monospace;
     background-color: #fff;
-    font-size: 15.5px;
+    font-size: 14px;
     color: #000;
     text-decoration: none;
+    margin-top: 20px;
     border-radius: 8px;
     margin: 10px 0;
     transition: background-color 0.3s ease;
@@ -69,6 +70,15 @@ body {
     background-color: #ddd;
   }
   
+  .dark-mode .project-button {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .dark-mode .project-button:hover {
+    background-color: #474747;
+  }
+
   main {
     text-align: center;
   }
@@ -102,6 +112,15 @@ body {
   .dark-mode h2,
   .dark-mode p {
     color: #000;
+  }
+
+  .dark-mode button {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .dark-mode button:hover {
+    background-color: #474747;
   }
   
   section {

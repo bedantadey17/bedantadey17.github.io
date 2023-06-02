@@ -49,6 +49,15 @@ body {
     background-color: #ddd;
   }
   
+  .dark-mode .buttons .cta-button {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .dark-mode .buttons .cta-button:hover {
+    background-color: #474747;
+  }
+  
   /* button of dark mode */
   button {
     font-family: "Courier New", Courier, monospace;
@@ -119,6 +128,16 @@ body {
   .dark-mode p {
     color: #000;
   }
+
+  .dark-mode button {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .dark-mode button:hover {
+    background-color: #474747;
+  }
+  
   
   section {
     display: flex;

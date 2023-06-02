@@ -117,6 +117,15 @@ footer {
   color: #000;
 }
 
+.dark-mode button {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-mode button:hover {
+  background-color: #474747;
+}
+
 section {
   display: flex;
   flex-direction: column;

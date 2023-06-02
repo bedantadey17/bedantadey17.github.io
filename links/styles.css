@@ -81,6 +81,15 @@ body {
     justify-content: center;
     width: 200px;
   }
+
+  .dark-mode .link-button {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .dark-mode .link-button:hover {
+    background-color: #474747;
+  }
   
   .link-button i {
     margin-right: 10px;
@@ -109,6 +118,15 @@ body {
     color: #000;
   }
   
+  .dark-mode button {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .dark-mode button:hover {
+    background-color: #474747;
+  }
+
   section {
     display: flex;
     flex-direction: column;
