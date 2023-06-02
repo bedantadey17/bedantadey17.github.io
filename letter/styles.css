@@ -1,202 +1,221 @@
 body {
-    font-family: "Courier New", Courier, monospace;
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    margin: 0;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .dark-mode {
-    background-color: #fff;
-    color: #000;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .logo {
-    font-size: 29px;
-    margin-top: 10px;
-    font-family: 'Josefin Sans', sans-serif;
-  }
-  
-  .buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    border-radius: 8px;
-    font-family: "DM Mono", monospace;
-  }
-  
-  .buttons .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #000;
-    text-decoration: none;
-    border-radius: 8px;
-    margin: 0 10px;
-    transition: background-color 0.3s ease;
-    border: 2px solid #000;
-  }
-  
-  .buttons .cta-button:hover {
-    background-color: #ddd;
-  }
-  
-  /* button of dark mode */
-  button {
-    font-family: "DM Mono", monospace;
-    font-size: 14px;
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #000;
-    border: 2px solid #000;
-    border-radius: 8px;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+  font-family: "Courier New", Courier, monospace;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-  button:hover {
-    background-color: #ddd;
-  }
-  
-  .main-toggle {
-    font-family: "DM Mono", monospace;
-    font-size: 14px;
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #000;
-    border: 2px solid #000;
-    border-radius: 8px;
-    margin: 0 10px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .main-toggle:hover {
-    background-color: #ddd;
-  }
-  
-  main {
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 35px;
-    margin-bottom: 10px;
-    font-family: "Courier New", Courier, monospace;
-  }
-  
-  p {
-    font-size: 15.5px;
-    margin-bottom: 20px;
-    font-family: "DM Mono", monospace;
-  }
-  
-  footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  
-  .dark-mode section {
-    background-color: #fff;
-    color: #000;
-  }
-  
-  .dark-mode h2,
-  .dark-mode p {
-    color: #000;
-  }
-  
-  section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-  }
+.dark-mode {
+  background-color: #fff;
+  color: #000;
+}
 
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: inherit;
-    transition: ease-in-out 0.3s
-  }
-  
-  /* Newsletter form styles */
-  .newsletter-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-  }
-  
-  .newsletter-input {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    font-family: "DM Mono", monospace;
-  }
-  
-  .newsletter-input input[type="email"] {
-    border: 2px solid #000;
-    padding: 11px;
-    width: 300px;
-    
-    font-family: "DM Mono", monospace;
-    font-size: 14px;
-    border-radius: 8px;
-  }
-  
-  .newsletter-input button {
-    font-family: "DM Mono", monospace;
-    padding: 10px 20px;
-    font-size: 14px;
-    background-color: #fff;
-    color: #000;
-    border: 2px solid #000;
-    border-radius: 8px;
-    margin-left: 10px;
-    cursor: pointer;
-  }
-  
-  #subscription-status {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 20px;
-    color: goldenrod;
-    text-align: center;
-  }
-  
-  
-  button[type="submit"] {
-    padding: 10px 20px;
-    font-family: "DM Mono", monospace;
-    font-size: 15.5px;
-    background-color: #fff;
-    color: #000;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-    border: 2px solid #000;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #ddd;
-  }
-  
-  
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo {
+  font-size: 29px;
+  margin-top: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-family: "DM Mono", monospace;
+}
+
+.buttons .cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+  border: 2px solid #000;
+}
+
+.buttons .cta-button:hover {
+  background-color: #ddd;
+}
+
+button {
+  font-family: "DM Mono", monospace;
+  font-size: 14px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.main-toggle {
+  font-family: "DM Mono", monospace;
+  font-size: 14px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 8px;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.main-toggle:hover {
+  background-color: #ddd;
+}
+
+main {
+  text-align: center;
+}
+
+h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+p {
+  font-size: 15.5px;
+  margin-bottom: 20px;
+  font-family: "DM Mono", monospace;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.dark-mode section {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark-mode h2,
+.dark-mode p {
+  color: #000;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  transition: ease-in-out 0.3s;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.newsletter-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: "DM Mono", monospace;
+}
+
+.newsletter-input input[type="email"] {
+  border: 2px solid #000;
+  padding: 11px;
+  width: 300px;
+  font-family: "DM Mono", monospace;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.newsletter-input button {
+  font-family: "DM Mono", monospace;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#subscription-status {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: goldenrod;
+  text-align: center;
+}
+
+.faq-dropdown {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 1px;
+}
+
+.faq-content p {
+  font-size: 12px;
+  margin-bottom: 0.5px;
+}
+
+.faq-content.expand {
+  max-height: 200px;
+}
+
+.faq-toggle i {
+  margin-left: 5px;
+}
+
+/* Adjusting styles for dark mode */
+
+.dark-mode .faq-dropdown {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark-mode .faq-toggle,
+.dark-mode .faq-toggle i {
+  color: #000;
+}
+
+.dark-mode .faq-content {
+  color: #000;
+}

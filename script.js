@@ -57,3 +57,19 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  const faqToggle = document.querySelector('.faq-toggle');
+  const faqContent = document.querySelector('.faq-content');
+
+  faqToggle.addEventListener('click', function() {
+    faqContent.classList.toggle('expand');
+    const icon = faqToggle.querySelector('i');
+    icon.classList.toggle('fa-caret-down');
+    icon.classList.toggle('fa-caret-up');
+  });
+});
+
+
