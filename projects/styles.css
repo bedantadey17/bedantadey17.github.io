@@ -20,9 +20,9 @@ body {
   }
   
   .logo {
-    font-size: 29px;
+    font-size: 32px;
     margin-top: 10px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Courier Prime', monospace;
   }
   
   button {

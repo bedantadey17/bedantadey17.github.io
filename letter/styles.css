@@ -20,9 +20,9 @@ header {
 }
 
 .logo {
-  font-size: 29px;
+  font-size: 32px;
   margin-top: 10px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Courier Prime', monospace;
 }
 
 .buttons {
@@ -198,6 +198,7 @@ a:hover {
   overflow: hidden;
   transition: max-height 0.3s ease;
   padding: 1px;
+  cursor: auto;
 }
 
 .faq-content p {
@@ -207,6 +208,15 @@ a:hover {
 
 .faq-content.expand {
   max-height: 200px;
+}
+
+.faq-toggle {
+  display: inline-block;
+  /* border: 2px solid white;
+  width: 400px;
+  border-radius: 5px; */
+  margin-top: 10px;
+  margin-bottom: 4px;
 }
 
 .faq-toggle i {
@@ -220,7 +230,10 @@ a:hover {
   color: #000;
 }
 
-.dark-mode .faq-toggle,
+/* .dark-mode .faq-toggle {
+  border: 2px solid black;
+} */
+
 .dark-mode .faq-toggle i {
   color: #000;
 }

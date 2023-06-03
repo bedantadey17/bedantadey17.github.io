@@ -26,7 +26,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     subscribeEmail(email);
     
-    subscriptionStatus.textContent = "Successfully subscribed to the newsletter!";
+    subscriptionStatus.textContent = "Contacting server...";
+
+    setTimeout(function() {
+      subscriptionStatus.textContent = "Successfully subscribed to the newsletter!";
+    }, 1300);
+
     emailInput.value = "";
   });
 
