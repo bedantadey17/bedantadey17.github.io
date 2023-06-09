@@ -1,0 +1,178 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  #texturePacks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .texture-pack {
+    width: 350px;
+    height: 300px;
+    padding: 20px;
+    background-color: #1b1b1b;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  .pack-image {
+    margin-bottom: 20px;
+  }
+  
+  .pack-image img {
+    width: 320px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .pack-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .pack-description {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  
+  #downloadButton {
+    display: block;
+    width: 250px;
+    margin: 20px auto;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #downloadButton:hover {
+    background-color: rgb(190, 144, 25);
+  }
+  
+  #downloadButton:active {
+    background-color: rgb(172, 130, 25);
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .footer-column {
+    width: 48%;
+  }
+  
+  .footer-column h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-column code {
+    background-color: #ddd;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: #333; /* Adjusted color for better visibility */
+  }
+  
+  @media screen and (max-width: 600px) {
+    .footer-container {
+      flex-direction: column;
+    }
+  
+    .footer-column {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+
+  .dialog-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    
+  }
+  
+  .dialog-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .dialog-box p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .dialog-box button {
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dialog-box button:hover {
+    background-color: rgb(190, 144, 25);
+  }
+  
+  .dialog-box button:active {
+    background-color: rgb(172, 130, 25);
+  }
+  
+
+  a{
+    transition: color 0.3s ease;
+  }
+
+  a:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: goldenrod;
+  }
