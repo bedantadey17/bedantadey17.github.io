@@ -22,6 +22,8 @@ window.addEventListener("DOMContentLoaded", function () {
             case "Pack C":
               packURLs.push("https://raw.githubusercontent.com/bedantadey17/cosmopacks/main/NoLeafCherry.zip");
               break;
+            case "Pack D":
+              packURLs.push("https://raw.githubusercontent.com/bedantadey17/cosmopacks/main/DarkerCherry.zip")
             // Add more cases for other packs if needed
   
             default:
