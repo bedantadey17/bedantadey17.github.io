@@ -181,9 +181,9 @@ a:hover {
 #subscription-status {
   font-family: "Courier New", Courier, monospace;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: bolder;
   margin-top: 20px;
-  color: goldenrod;
+  color: rgb(4, 143, 143);
   text-align: center;
 }
 
