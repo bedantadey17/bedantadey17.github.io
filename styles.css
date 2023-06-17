@@ -17,12 +17,20 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+    margin-top: -10px;
   }
   
   .logo {
     font-size: 32px;
-    margin-top: 10px;
     font-family: 'Courier Prime', monospace;
+  }
+  
+  .logo button {
+    margin-left: 10px;
+  }
+  
+  .dark-mode .logo button {
+    margin-top: -2px;
   }
   
   .buttons {
@@ -67,7 +75,6 @@ body {
     color: #000;
     border: 2px solid #000;
     border-radius: 8px;
-    margin-top: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
@@ -156,3 +163,19 @@ body {
     transition: ease-in-out 0.3s
   }
   
+
+  #dynamicText {
+    font-size: 12px;
+    color: aquamarine;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .dark-mode #dynamicText{
+    color: rgb(4, 143, 143);
+  }

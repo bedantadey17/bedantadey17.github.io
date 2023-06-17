@@ -17,6 +17,20 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+    margin-top: -10px;
+  }
+  
+  .logo {
+    font-size: 32px;
+    font-family: 'Courier Prime', monospace;
+  }
+  
+  .logo button {
+    margin-left: 10px;
+  }
+  
+  .dark-mode .logo button {
+    margin-top: -2px;
   }
   
   p {
@@ -25,11 +39,6 @@ body {
     font-family: "DM Mono", monospace;
   }
 
-  .logo {
-    font-size: 32px;
-    margin-top: 10px;
-    font-family: 'Courier Prime', monospace;
-  }
   
   button {
     font-family: "DM Mono", monospace;
@@ -39,7 +48,6 @@ body {
     color: #000;
     border: 2px solid #000;
     border-radius: 8px;
-    margin-top: 10px;
     cursor: pointer;
   }
   
