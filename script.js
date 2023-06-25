@@ -1,4 +1,4 @@
-console.log("Good morning/day/evening!\nWe're running on version: 1.2.7")
+console.log("Good morning/day/evening!\nWe're running on version: 1.2.8")
 console.log("How to read version naming scheme: X.Y.Z\nZ is most minor release. As in very minor updates like bug fixes. \nY is a slightly major site update, with new features and stuff. \nX is a site release; will increment every Y=9 and Z=9 versions.")
 console.log("Website made by Bedanta Dey. All rights reserved. ")
 
@@ -38,3 +38,5 @@ window.addEventListener("DOMContentLoaded", function () {
       console.log("Failed to fetch text data:", error);
     });
 });
+
+

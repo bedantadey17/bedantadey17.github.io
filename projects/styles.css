@@ -21,7 +21,7 @@ body {
   }
   
   .logo {
-    font-size: 32px;
+    font-size: 35px;
     font-family: 'Courier Prime', monospace;
   }
   
@@ -93,7 +93,7 @@ body {
   h2 {
     font-size: 35px;
     margin-bottom: 10px;
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Ubuntu Mono', monospace;
   }
   
   p {
