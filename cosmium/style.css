@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #000;
+  overflow-y: auto;
+}
+
+.terminal {
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px;
+  background-color: #1f1f1f;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.terminal-controls {
+  display: flex;
+  margin-right: 12px;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  border-radius: 50%;
+}
+
+.terminal-button-red {
+  background-color: #f44336;
+}
+
+.terminal-button-yellow {
+  background-color: #ffeb3b;
+}
+
+.terminal-button-green {
+  background-color: #4caf50;
+}
+
+.terminal-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+}
+
+.terminal-body {
+  padding: 16px;
+  line-height: 1.4;
+  flex: 1;
+  padding-right: 20px;
+}
+
+.terminal-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.terminal-footer p {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.invite-button {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #5865F2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.invite-button:hover {
+  background-color: #4a5b8d;
+}
+
+.add-button {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #5865F2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left:25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-button:hover {
+    background-color: #4a5b8d;
+  }
+
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+code {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+}
+
+details {
+  margin-bottom: 20px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #333;
+  cursor: pointer;
+}
+
+details[open] {
+  background-color: #444;
+}
+
+details summary {
+  padding: 8px 16px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #1f1f1f;
+  color: #fff;
+  outline: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details ul {
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1f1f1f;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}
