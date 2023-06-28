@@ -163,13 +163,24 @@ body {
     transition: ease-in-out 0.3s
   }
   
-  .buttons .cta-button:nth-child(4) {
+
+  /* .buttons .cta-button:nth-child(3) {
+    background-color: rgb(173, 172, 172);
+    color: #000;
+  }
+  
+  .buttons .cta-button:nth-child(3):hover {
+    background-color: #ddd;
+  } */
+
+
+  .buttons .cta-button:nth-child(3) {
     background-color: goldenrod;
     color: #fff;
     font-weight: bold;
   }
   
-  .buttons .cta-button:nth-child(4):hover {
+  .buttons .cta-button:nth-child(3):hover {
     background-color: rgb(185, 140, 27);
   }
 
@@ -178,6 +189,7 @@ body {
     font-size: 12px;
     color: aquamarine;
     font-weight: bold;
+    font-style: italic;
     text-align: center;
     margin-top: 10px;
     max-width: 100%;

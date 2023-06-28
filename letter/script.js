@@ -13,68 +13,68 @@ darkModeToggle.addEventListener('click', () => {
   localStorage.setItem('darkMode', isDarkMode);
 });
 
-// newsletter
-document.addEventListener("DOMContentLoaded", function() {
-  var form = document.getElementById("newsletterForm");
-  var subscriptionStatus = document.getElementById("subscription-status");
+// // newsletter
+// document.addEventListener("DOMContentLoaded", function() {
+//   var form = document.getElementById("newsletterForm");
+//   var subscriptionStatus = document.getElementById("subscription-status");
 
-  form.addEventListener("submit", function(event) {
-    event.preventDefault();
+//   form.addEventListener("submit", function(event) {
+//     event.preventDefault();
     
-    var emailInput = document.getElementById("emailInput");
-    var email = emailInput.value;
+//     var emailInput = document.getElementById("emailInput");
+//     var email = emailInput.value;
 
-    subscribeEmail(email);
+//     subscribeEmail(email);
     
-    subscriptionStatus.textContent = "Contacting server...";
+//     subscriptionStatus.textContent = "Contacting server...";
 
-    setTimeout(function() {
-      subscriptionStatus.textContent = "Success! You're now subscribed.";
-    }, 1300);
+//     setTimeout(function() {
+//       subscriptionStatus.textContent = "Success! You're now subscribed.";
+//     }, 1300);
 
-    emailInput.value = "";
-  });
+//     emailInput.value = "";
+//   });
 
 
-  function subscribeEmail(email) {
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://script.google.com/macros/s/AKfycbwj_MFbR8HYfTHCu2_PB6MePmWHhGJn6sRYrjKBcGrscVTZq7BlqKdtXY6Fp7cgedE/exec", true);
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+//   function subscribeEmail(email) {
+//     var xhr = new XMLHttpRequest();
+//     xhr.open("POST", "https://script.google.com/macros/s/AKfycbwj_MFbR8HYfTHCu2_PB6MePmWHhGJn6sRYrjKBcGrscVTZq7BlqKdtXY6Fp7cgedE/exec", true);
+//     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
   
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState === XMLHttpRequest.DONE) {
-        if (xhr.status === 200) {
-          var response = JSON.parse(xhr.responseText);
-          if (response.success) {
-            subscriptionStatus.innerText = "Subscribed! You should now receive blogposts directly in your email.";
-            emailInput.value = "";
-          } else {
-            subscriptionStatus.innerText = "An error occurred. Please try again.";
-          }
-        } else {
-          subscriptionStatus.innerText = "An error occurred. Please try again.";
-        }
-      }
-    };
+//     xhr.onreadystatechange = function() {
+//       if (xhr.readyState === XMLHttpRequest.DONE) {
+//         if (xhr.status === 200) {
+//           var response = JSON.parse(xhr.responseText);
+//           if (response.success) {
+//             subscriptionStatus.innerText = "Subscribed! You should now receive blogposts directly in your email.";
+//             emailInput.value = "";
+//           } else {
+//             subscriptionStatus.innerText = "An error occurred. Please try again.";
+//           }
+//         } else {
+//           subscriptionStatus.innerText = "An error occurred. Please try again.";
+//         }
+//       }
+//     };
   
-    var params = "email=" + encodeURIComponent(email);
-    xhr.send(params);
-  }
+//     var params = "email=" + encodeURIComponent(email);
+//     xhr.send(params);
+//   }
   
-});
+// });
 
 
-document.addEventListener("DOMContentLoaded", function() {
+// document.addEventListener("DOMContentLoaded", function() {
 
-  const faqToggle = document.querySelector('.faq-toggle');
-  const faqContent = document.querySelector('.faq-content');
+//   const faqToggle = document.querySelector('.faq-toggle');
+//   const faqContent = document.querySelector('.faq-content');
 
-  faqToggle.addEventListener('click', function() {
-    faqContent.classList.toggle('expand');
-    const icon = faqToggle.querySelector('i');
-    icon.classList.toggle('fa-caret-down');
-    icon.classList.toggle('fa-caret-up');
-  });
-});
+//   faqToggle.addEventListener('click', function() {
+//     faqContent.classList.toggle('expand');
+//     const icon = faqToggle.querySelector('i');
+//     icon.classList.toggle('fa-caret-down');
+//     icon.classList.toggle('fa-caret-up');
+//   });
+// });
 
 

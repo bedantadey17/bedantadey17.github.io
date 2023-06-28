@@ -1,17 +1,41 @@
 {
-    "texts": [
-      "\"Not a new website!\"",
-      "\"Now with random messages!\"",
-      "\"Click the buttons below!\"",
-      "\"Click the logo to return here!\"",
-      "\"These messages change!\"",
-      "\"Music, anyone?\"",
-      "\"There are 12 unique messages!\"",
-      "\"Gray Matter!\"",
-      "\"Hello, user!\"",
-      "\"Open console to check version!\"",
-      "\"Thanks for stopping by!\"",
-      "\"Cosmium, my beloved!\""
-    ]
-  }
-  
+  "texts": [
+    "\"A rose by any other name would smell as sweet.\" - William Shakespeare",
+    "\"All that glitters is not gold.\" - William Shakespeare",
+    "\"The bad news is that time flies, the good news is that you're the pilot.\" - Michael Altshuler",
+    "\"Eighty percent of success is showing up.\" - Woody Allen",
+    "\"He travels the fastest who travels alone.\" - Rudyard Kipling",
+    "\"If at first you don’t succeed, try, try again.\" - W.E. Hickson",
+    "\"If you are going through hell, keep going.\" - Winston Churchill",
+    "\"A person who never made a mistake never tried anything new.\" - Albert Einstein",
+    "\"Believe you can and you're halfway there.\" - Theodore Roosevelt",
+    "\"The future belongs to those who believe in the beauty of their dreams.\" - Eleanor Roosevelt",
+    "\"Life is what happens when you're busy making other plans.\" - John Lennon",
+    "\"It does not matter how slowly you go as long as you do not stop.\" - Confucius",
+    "\"You miss 100% of the shots you don't take.\" - Wayne Gretzky",
+    "\"The best time to plant a tree was 20 years ago. The second best time is now.\" - Chinese Proverb",
+    "\"Don't watch the clock; do what it does. Keep going.\" - Sam Levenson",
+    "\"The only limit to our realization of tomorrow will be our doubts of today.\" - Franklin D. Roosevelt",
+    "\"Life is either a daring adventure or nothing at all.\" - Helen Keller",
+    "\"The future starts today, not tomorrow.\" - Pope John Paul II",
+    "\"The only person you are destined to become is the person you decide to be.\" - Ralph Waldo Emerson",
+    "\"You are never too old to set another goal or to dream a new dream.\" - C.S. Lewis",
+    "\"Success usually comes to those who are too busy to be looking for it.\" - Henry David Thoreau",
+    "\"I have not failed. I've just found 10,000 ways that won't work.\" - Thomas Edison",
+    "\"Your time is limited, don't waste it living someone else's life.\" - Steve Jobs",
+    "\"It always seems impossible until it's done.\" - Nelson Mandela",
+    "\"The only way to do great work is to love what you do.\" - Steve Jobs",
+    "\"The best revenge is massive success.\" - Frank Sinatra",
+    "\"Don't be afraid to give up the good to go for the great.\" - John D. Rockefeller",
+    "\"Stay Hungry, Stay Foolish.\" - Steve Jobs",
+    "\"Life is short, and it's up to you to make it sweet.\" - Sarah Louise Delany",
+    "\"In the midst of winter, I found there was, within me, an invincible summer.\" - Albert Camus",
+    "\"The harder I work, the luckier I get.\" - Samuel Goldwyn",
+    "\"We may encounter many defeats, but we must not be defeated.\" - Maya Angelou",
+    "\"The only limit to our realization of tomorrow will be our doubts of today.\" - Franklin D. Roosevelt",
+    "\"The best way to predict the future is to create it.\" - Peter Drucker",
+    "\"You don't have to be great to start, but you have to start to be great.\" - Zig Ziglar",
+    "\"I find that the harder I work, the more luck I seem to have.\" - Thomas Jefferson",
+    "\"The more I want to get something done, the less I call it work.\" - Richard Bach"
+  ]
+}
