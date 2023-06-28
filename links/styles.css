@@ -39,21 +39,44 @@ p {
   font-family: "DM Mono", monospace;
 }
 
+/* button of dark mode */
 button {
-  font-family: "DM Mono", monospace;
-  padding: 10px 20px;
+  font-family: "Courier New", Courier, monospace;
   font-size: 14px;
+  padding: 10px 20px;
   background-color: #fff;
   color: #000;
   border: 2px solid #000;
   border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #ddd;
+}
+
+.main-toggle {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 8px;
+  margin: 0 10px;
+  font-family: "DM Mono", monospace;
   transition: background-color 0.3s ease;
 }
+
+.main-toggle:hover {
+  background-color: #ddd;
+}
+
+main {
+  text-align: center;
+}
+
 
 main {
   text-align: center;
