@@ -1,155 +1,170 @@
 body {
-    font-family: "Courier New", Courier, monospace;
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    margin: 0;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .dark-mode {
-    background-color: #fff;
-    color: #000;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-    margin-top: -10px;
-  }
-  
-  .logo {
-    font-size: 35px;
-    font-family: 'Courier Prime', monospace;
-  }
-  
-  .logo button {
-    margin-left: 10px;
-  }
-  
-  .dark-mode .logo button {
-    margin-top: -2px;
-  }
-  
-  p {
-    font-size: 15.5px;
-    margin-bottom: 20px;
-    font-family: "DM Mono", monospace;
-  }
+  font-family: "Courier New", Courier, monospace;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-  
-  button {
-    font-family: "DM Mono", monospace;
-    padding: 10px 20px;
-    font-size: 14px;
-    background-color: #fff;
-    color: #000;
-    border: 2px solid #000;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #ddd;
-    transition: background-color 0.3s ease;
-  }
-  
-  main {
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 35px;
-    margin-bottom: 10px;
-    font-family: 'Ubuntu Mono', monospace;
-  }
-  
-  .links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .link-button {
-    padding: 10px 20px;
-    font-family: "DM Mono", monospace;
-    background-color: #fff;
-    font-size: 15.5px;
-    color: #000;
-    text-decoration: none;
-    border-radius: 8px;
-    margin: 10px 0;
-    transition: background-color 0.3s ease;
-    border: 2px solid #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-  }
+.dark-mode {
+  background-color: #fff;
+  color: #000;
+}
 
-  .dark-mode .link-button {
-    background-color: #000;
-    color: #fff;
-  }
-  
-  .dark-mode .link-button:hover {
-    background-color: #474747;
-  }
-  
-  .link-button i {
-    margin-right: 10px;
-  }
-  
-  .link-button:hover {
-    background-color: #ddd;
-  }
-  
-  footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  .dark-mode section {
-    background-color: #fff;
-    color: #000;
-  }
-  
-  .dark-mode h2,
-  .dark-mode p {
-    color: #000;
-  }
-  
-  .dark-mode button {
-    background-color: #000;
-    color: #fff;
-  }
-  
-  .dark-mode button:hover {
-    background-color: #474747;
-  }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
 
-  section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-  
-  header a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  header a:hover,
-  header a:focus {
-    color: inherit;
-    text-decoration: none;
-  }
-  
+.logo {
+  font-size: 35px;
+  font-family: 'Courier Prime', monospace;
+}
+
+.logo button {
+  margin-left: 10px;
+}
+
+.dark-mode .logo button {
+  margin-top: -2px;
+}
+
+p {
+  font-size: 15.5px;
+  margin-bottom: 20px;
+  font-family: "DM Mono", monospace;
+}
+
+button {
+  font-family: "DM Mono", monospace;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+  transition: background-color 0.3s ease;
+}
+
+main {
+  text-align: center;
+}
+
+h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.link-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.link-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.link-button {
+  padding: 10px 20px;
+  font-family: "DM Mono", monospace;
+  background-color: #fff;
+  font-size: 15.5px;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+
+.dark-mode .link-button {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-mode .link-button:hover {
+  background-color: #474747;
+}
+
+.link-button i {
+  margin-right: 10px;
+}
+
+.link-text {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.link-button:hover {
+  background-color: #ddd;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.dark-mode section {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark-mode h2,
+.dark-mode p {
+  color: #000;
+}
+
+.dark-mode button {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-mode button:hover {
+  background-color: #474747;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header a:hover,
+header a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
