@@ -1,0 +1,93 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  main {
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu Mono', monospace;
+  }
+  
+  p {
+    font-size: 15.5px;
+    margin-bottom: 20px;
+    font-family: "DM Mono", monospace;
+  }
+  
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .search-bar input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000;
+    font-family: "DM Mono", monospace;
+  }
+  
+  .search-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  #searchEngine {
+    width: 137px;
+    padding: 10px;
+    font-family: "DM Mono", monospace;
+  }
+  
+  #searchButton {
+    width: 177px;
+    padding: 10px 20px;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "DM Mono", monospace;
+    margin-left: 10px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, aquamarine 0%, rgb(4, 143, 143) 100%);
+  }
+  
+  #searchButton:hover {
+    background-image: linear-gradient(to right, rgb(112, 212, 179) 0%, rgb(2, 114, 114) 100%);
+  }
+  
+  .search-controls select {
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000;
+    font-family: "DM Mono", monospace;
+  }
+  
+  .search-controls button {
+    margin-left: 10px;
+  }
+  
