@@ -1,6 +1,6 @@
 body {
   font-family: "Courier New", Courier, monospace;
-  background-color: #000;
+  background-image: url("/images/background.png");
   color: #fff;
   padding: 20px;
   margin: 0;
@@ -8,7 +8,7 @@ body {
 }
 
 .dark-mode {
-  background-color: #fff;
+  background-image: url("/images/background_light.png");
   color: #000;
 }
 
@@ -86,7 +86,7 @@ button:hover {
 }
 
 .dark-mode .project-button:hover {
-  background-color: #474747;
+  background-color: #181818;
 }
 
 main {
@@ -112,16 +112,6 @@ footer {
   bottom: 0;
   width: 100%;
   height: 2.5rem;
-}
-
-.dark-mode section {
-  background-color: #fff;
-  color: #000;
-}
-
-.dark-mode h2,
-.dark-mode p {
-  color: #000;
 }
 
 .dark-mode button {
@@ -166,4 +156,9 @@ header a:focus {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555;
+}
+
+#mou{
+  box-shadow: 0px 0px 20px 10px ;
+  position: absolute;
 }

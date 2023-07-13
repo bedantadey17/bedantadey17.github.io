@@ -1,6 +1,6 @@
 body {
   font-family: "Courier New", Courier, monospace;
-  background-color: #000;
+  background-image: url("/images/background.png");
   color: #fff;
   padding: 20px;
   margin: 0;
@@ -8,7 +8,7 @@ body {
 }
 
 .dark-mode {
-  background-color: #fff;
+  background-image: url("/images/background_light.png");
   color: #000;
 }
 
@@ -129,7 +129,7 @@ h2 {
 }
 
 .dark-mode .link-button:hover {
-  background-color: #474747;
+  background-color: #181818;
 }
 
 .link-button i {
@@ -152,16 +152,6 @@ footer {
   bottom: 0;
   width: 100%;
   height: 2.5rem;  
-}
-
-.dark-mode section {
-  background-color: #fff;
-  color: #000;
-}
-
-.dark-mode h2,
-.dark-mode p {
-  color: #000;
 }
 
 .dark-mode button {
@@ -207,5 +197,40 @@ header a:focus {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555;
+}
+
+#mou{
+  box-shadow: 0px 0px 20px 10px ;
+  position: absolute;
+}
+
+.link-button.spotify:hover {
+  background-color: #1DB954;
+  color: white;
+}
+
+.link-button.github:hover {
+  background-color: #424242;
+  color: white;
+}
+
+.link-button.steam:hover {
+  background-color: #1b2838;
+  color: white;
+}
+
+.link-button.instagram:hover {
+  background-color: #c32aa3;
+  color: white;
+}
+
+.link-button.youtube:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+.link-button.discord:hover {
+  background-color: #5865F2;
+  color: white;
 }
 

@@ -1,6 +1,6 @@
 body {
     font-family: "Courier New", Courier, monospace;
-    background-color: #000;
+    background-image: url("images/background.png");
     color: #fff;
     padding: 20px;
     margin: 0;
@@ -8,7 +8,7 @@ body {
   }
   
   .dark-mode {
-    background-color: #fff;
+    background-image: url("images/background_light.png");
     color: #000;
   }
   
@@ -63,7 +63,7 @@ body {
   }
   
   .dark-mode .buttons .cta-button:hover {
-    background-color: #474747;
+    background-color: #181818;
   }
   
   /* button of dark mode */
@@ -111,9 +111,9 @@ body {
   }
   
   p {
+    font-family: 'DM Mono', monospace;
     font-size: 15.5px;
     margin-bottom: 20px;
-    font-family: "DM Mono", monospace;
   }
   
   footer {
@@ -125,16 +125,6 @@ body {
     height: 2.5rem;  
   }
   
-  
-  .dark-mode section {
-    background-color: #fff;
-    color: #000;
-  }
-  
-  .dark-mode h2,
-  .dark-mode p {
-    color: #000;
-  }
 
   .dark-mode button {
     background-color: #000;
@@ -142,7 +132,7 @@ body {
   }
   
   .dark-mode button:hover {
-    background-color: #474747;
+    background-color: #181818;
   }
   
   
@@ -162,44 +152,6 @@ body {
     color: inherit;
     transition: ease-in-out 0.3s
   }
-  
-
-  /* .buttons .cta-button:nth-child(3) {
-    background-color: rgb(173, 172, 172);
-    color: #000;
-  }
-  
-  .buttons .cta-button:nth-child(3):hover {
-    background-color: #ddd;
-  } */
-
-
-  .buttons .cta-button:nth-child(3) {
-    background-color: aquamarine;
-    color:#000;
-  }
-  
-  .buttons .cta-button:nth-child(3):hover {
-    background-color: rgb(4, 143, 143);
-  }
-
-  
-  #dynamicText {
-    font-size: 12px;
-    color: aquamarine;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    margin-top: 10px;
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  
-  .dark-mode #dynamicText{
-    color: rgb(4, 143, 143);
-  }
 
   ::-webkit-scrollbar {
     width: 6px;
@@ -218,3 +170,18 @@ body {
     background-color: #555;
   }
   
+  #currentTime{
+    font-family: "DM Mono", monospace;
+    color: aquamarine;
+    font-weight: bold;
+    font-size: 12.5px;
+  }
+
+  .dark-mode #currentTime {
+    color: rgb(4, 143, 143);
+  }
+
+  #mou{
+    box-shadow: 0px 0px 20px 10px ;
+    position: absolute;
+  }
