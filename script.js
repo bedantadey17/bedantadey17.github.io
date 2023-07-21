@@ -1,4 +1,4 @@
-console.log("Good morning/day/evening!\nWe're running on version: 1.4.0")
+console.log("Good morning/day/evening!\nWe're running on version: 1.4.1")
 
 
 const modePreference = localStorage.getItem('darkMode');
