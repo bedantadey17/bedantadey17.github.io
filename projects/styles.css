@@ -86,7 +86,7 @@ button:hover {
 }
 
 .dark-mode .project-button:hover {
-  background-color: #181818;
+  background-color: #222222;
 }
 
 main {
@@ -120,7 +120,7 @@ footer {
 }
 
 .dark-mode button:hover {
-  background-color: #474747;
+  background-color: #222222;
 }
 
 section {

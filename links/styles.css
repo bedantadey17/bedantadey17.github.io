@@ -129,7 +129,7 @@ h2 {
 }
 
 .dark-mode .link-button:hover {
-  background-color: #181818;
+  background-color: #222222;
 }
 
 .link-button i {
@@ -160,7 +160,7 @@ footer {
 }
 
 .dark-mode button:hover {
-  background-color: #474747;
+  background-color: #222222;
 }
 
 section {
@@ -233,4 +233,3 @@ header a:focus {
   background-color: #5865F2;
   color: white;
 }
-
