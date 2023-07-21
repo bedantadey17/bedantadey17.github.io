@@ -100,14 +100,6 @@ function activateEasterEgg() {
   image.src = '/images/back_easteregg.gif'; 
 
   image.onload = function () {
-    const bodyWidth = document.body.clientWidth;
-    const bodyHeight = document.body.clientHeight;
-    const imageWidth = image.width;
-    const imageHeight = image.height;
-    const widthRatio = bodyWidth / imageWidth;
-    const heightRatio = bodyHeight / imageHeight;
-    const scaleRatio = Math.max(widthRatio, heightRatio);
-
     document.body.style.backgroundImage = `url(${image.src})`;
     document.body.style.backgroundSize = `${imageWidth * scaleRatio}px ${imageHeight * scaleRatio}px`;
     document.body.style.backgroundRepeat = 'no-repeat';
