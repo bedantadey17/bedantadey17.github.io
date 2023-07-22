@@ -1,4 +1,4 @@
-console.log("Good morning/day/evening!\nWe're running on version: 1.4.1")
+console.log("Good morning/day/evening!\nWe're running on version: 1.4.2")
 
 
 const modePreference = localStorage.getItem('darkMode');
@@ -98,12 +98,12 @@ function activateEasterEgg() {
   easterEggActivated = true;
   const image = new Image();
   image.src = '/images/back_easteregg.gif'; 
+  document.body.style.backgroundSize = '100% 100%'
 
   image.onload = function () {
+
     document.body.style.backgroundImage = `url(${image.src})`;
-    document.body.style.backgroundSize = `${imageWidth * scaleRatio}px ${imageHeight * scaleRatio}px`;
-    document.body.style.backgroundRepeat = 'no-repeat';
-    document.body.style.backgroundPosition = 'center';
+    document.body.style.backgroundSize = 'cover';
   };
 
   backgroundMusic.loop = true;
@@ -159,6 +159,7 @@ if (localStorage.getItem('easterEggActivated') === 'true' && window.location.pat
 }
 function disableEasterEgg() {
   localStorage.removeItem('easterEggActivated');
+  document.body.style.backgroundSize = 'contain';
 }
 window.addEventListener('beforeunload', disableEasterEgg);
 
