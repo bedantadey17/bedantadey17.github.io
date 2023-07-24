@@ -1,4 +1,4 @@
-console.log("Good morning/day/evening!\nWe're running on version: 1.4.2")
+console.log("Good morning/day/evening!\nWe're running on version: 1.4.3")
 
 
 const modePreference = localStorage.getItem('darkMode');
@@ -17,20 +17,19 @@ darkModeToggle.addEventListener('click', () => {
 });
 
 // TIME
+document.addEventListener("DOMContentLoaded", () => {
+  const currentTime = document.getElementById("currentTime");
+  const timeDisplay = document.getElementById("timeDisplay");
 
-document.addEventListener("DOMContentLoaded",()=>{
-  let ho;
-  let CT = document.getElementById("currentTime");
-  CT.innerHTML = r();
-  clearInterval(ho);
-  ho = setInterval(() => {
-      CT.innerHTML = r();
-  }, 1000)
-  function r(){
-      const time = new Date();
-      return "-- Time for me: " + Intl.DateTimeFormat("en-GB", where).format(time) + " --";
+  function updateTime() {
+    const time = new Date();
+    const formattedTime = Intl.DateTimeFormat("en-US", where).format(time);
+    timeDisplay.textContent = '-- Time for me: '+ formattedTime + ' --';
   }
-})
+
+  updateTime();
+  setInterval(updateTime, 1000);
+});
 
 const where = {
   timeZone: "Asia/Calcutta",
@@ -38,13 +37,7 @@ const where = {
   hour: "2-digit",
   minute: "2-digit",
   second: "2-digit",
-  dayPeriod: "long"
-}
-
-const options = {
-  year: "numeric",
-  month: "numeric",
-  day: "numeric",
+  dayPeriod: "short"
 };
 
 // FRIEND COPY

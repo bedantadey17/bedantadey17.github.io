@@ -1,6 +1,9 @@
 body {
   font-family: "Courier New", Courier, monospace;
   background-image: url("/images/background.png");
+  background-size: contain;
+  background-repeat: repeat; 
+  background-attachment: fixed;
   color: #fff;
   padding: 20px;
   margin: 0;
@@ -9,6 +12,9 @@ body {
 
 .dark-mode {
   background-image: url("/images/background_light.png");
+  background-size: contain;
+  background-repeat: repeat;
+  background-attachment: fixed;
   color: #000;
 }
 
@@ -210,7 +216,7 @@ header a:focus {
 }
 
 .link-button.github:hover {
-  background-color: #424242;
+  background-color: #333;
   color: white;
 }
 
@@ -231,5 +237,20 @@ header a:focus {
 
 .link-button.discord:hover {
   background-color: #5865F2;
+  color: white;
+}
+
+.link-button.duolingo:hover {
+  background-color: #58cc02;
+  color: white;
+}
+
+.link-button.pinterest:hover {
+  background-color: #C8232C;
+  color: white;
+}
+
+.link-button.namemc:hover {
+  background-color: rgb(22, 22, 22);
   color: white;
 }
