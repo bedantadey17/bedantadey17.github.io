@@ -55,46 +55,6 @@ button:hover {
   transition: background-color 0.3s ease;
 }
 
-.project-buttons {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  grid-row-gap: 40px;
-  font-family: "DM Mono", monospace;
-  align-items: center;
-  margin-top: 10px;
-  border-radius: 8px;
-}
-
-
-
-.project-button {
-  padding: 10px 20px;
-  font-family: "DM Mono", monospace;
-  background-color: #fff;
-  font-size: 14px;
-  color: #000;
-  text-decoration: none;
-  margin-top: 20px;
-  border-radius: 8px;
-  margin: 10px 0;
-  transition: background-color 0.3s ease;
-  border: 2px solid #000;
-}
-
-.project-button:hover {
-  background-color: #ddd;
-}
-
-.dark-mode .project-button {
-  background-color: #000;
-  color: #fff;
-}
-
-.dark-mode .project-button:hover {
-  background-color: #222222;
-}
-
 main {
   text-align: center;
 }
@@ -104,6 +64,7 @@ h2 {
   margin-bottom: 10px;
   font-family: 'Ubuntu Mono', monospace;
 }
+
 
 p {
   font-family: 'DM Mono', monospace;
@@ -168,3 +129,99 @@ header a:focus {
   box-shadow: 0px 0px 20px 10px ;
   position: absolute;
 }
+
+.project-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #fff;
+  color: #000;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-card:hover{
+  background-color: #eeeeee;
+}
+
+.dark-mode .project-card {
+  background-color: #000;
+  color:#fff;
+}
+
+.dark-mode .project-card:hover {
+  background-color: #161616;
+}
+
+.project-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.project-card p {
+  font-family: 'DM Mono', monospace;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-button {
+  margin: 5px;
+  padding: 8px 16px;
+  font-family: "DM Mono", monospace;
+  background-color: #000;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  border: 2px solid #000;
+}
+
+.dark-mode .project-button {
+  background-color: white;
+  color: black;
+}
+
+.project-button:hover {
+  background-color: #222222;;
+}
+
+.dark-mode .project-button:hover{
+  background-color: #ddd;
+}
+
+/* Arrange cards for desktop view */
+@media only screen and (min-width: 1024px) {
+  .project-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Arrange cards for tablet view */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .project-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Arrange cards for mobile view */
+@media only screen and (max-width: 767px) {
+  .project-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+
