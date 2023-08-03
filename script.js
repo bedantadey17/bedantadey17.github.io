@@ -1,5 +1,5 @@
 console.log("Good morning/day/evening!\nWe're running on version: 1.4.5")
-console.log("Created by Bedanta Dey.")
+console.log("Made by Bedanta Dey.")
 
 
 const modePreference = localStorage.getItem('darkMode');
@@ -69,21 +69,14 @@ function copyToClipboard(text) {
 
 let rr = document.createElement("div");
 rr.id = "mou";
-rr.style.position = "fixed";
+rr.position = "fixed";
 document.body.appendChild(rr);
 
-const isMobileDevice = () => {
-  return /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-};
 
-document.addEventListener('mousemove', (e) => {
-  if (!isMobileDevice() && window.innerWidth > 768) {
+document.addEventListener('mousemove', (e)=>{
     let locX = e.clientX;
     let locY = e.clientY;
     let mouse = document.getElementById("mou");
     mouse.style.left = locX + "px";
-    mouse.style.top = locY + "px";
-  }
-});
-
-
+    mouse.style.top = locY + "px" 
+})
