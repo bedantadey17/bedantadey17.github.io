@@ -151,15 +151,6 @@ h2 {
   background-color: #ddd;
 }
 
-footer {
-  font-family: 'DM Mono', monospace;
-  position: fixed;
-  text-align: center;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;  
-}
-
 .dark-mode button {
   background-color: #000;
   color: #fff;
@@ -253,4 +244,38 @@ header a:focus {
 .link-button.namemc:hover {
   background-color:  #5E9D34;
   color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link-column {
+    margin: 10px 0;
+  }
+
+  .link-button {
+    width: 100%;
+  }
+
+  /* Adjust individual link buttons if needed */
+  .link-button.github,
+  .link-button.spotify,
+  .link-button.steam,
+  .link-button.instagram,
+  .link-button.youtube,
+  .link-button.discord,
+  .link-button.duolingo,
+  .link-button.pinterest,
+  .link-button.namemc {
+    margin-bottom: 10px;
+  }
 }
