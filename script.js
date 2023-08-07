@@ -1,4 +1,4 @@
-console.log("Good morning/day/evening!\nWe're running on version: 1.4.5")
+console.log("Good morning/day/evening!\nWe're running on version: 1.4.6")
 console.log("Made by Bedanta Dey.")
 
 

@@ -56,7 +56,7 @@ body {
     border-radius: 8px;
     margin: 0 10px;
     transition: background-color 0.3s ease;
-    border: 2px solid #000;
+    border: 3px solid goldenrod;
   }
   
   .buttons .cta-button:hover {
@@ -79,7 +79,7 @@ body {
     padding: 10px 20px;
     background-color: #fff;
     color: #000;
-    border: 2px solid #000;
+    border: 3px solid goldenrod;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -89,22 +89,6 @@ body {
     background-color: #ddd;
   }
   
-  .main-toggle {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 14px;
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #000;
-    border: 2px solid #000;
-    border-radius: 8px;
-    margin: 0 10px;
-    font-family: "DM Mono", monospace;
-    transition: background-color 0.3s ease;
-  }
-  
-  .main-toggle:hover {
-    background-color: #ddd;
-  }
   
   main {
     text-align: center;
@@ -170,13 +154,13 @@ body {
 
   .time-section {
     font-family: "DM Mono", monospace;
-    color: #deb0a0;
+    color: goldenrod;
     font-weight: bold;
     font-size: 12.5px;
   }
 
   .dark-mode .time-section {
-    color: #b18080;
+    color: goldenrod;
   }
 
 
@@ -196,7 +180,7 @@ body {
     width: 110px;
     height: 110px;
     border-radius: 50%;
-    border: 2px solid #000;
+    border: 3px solid goldenrod;
   }
 
 

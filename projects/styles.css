@@ -39,13 +39,14 @@ header {
   margin-top: -2px;
 }
 
+/* button of dark mode */
 button {
   font-family: "DM Mono", monospace;
   padding: 10px 20px;
   font-size: 14px;
   background-color: #fff;
   color: #000;
-  border: 2px solid #000;
+  border: 3px solid goldenrod;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -187,7 +188,7 @@ header a:focus {
   text-decoration: none;
   border-radius: 8px;
   transition: background-color 0.3s ease;
-  border: 2px solid #000;
+  border: 2px solid goldenrod;
 }
 
 .dark-mode .project-button {
