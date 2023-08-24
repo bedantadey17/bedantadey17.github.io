@@ -10,11 +10,10 @@ body {
 
 .terminal {
   width: 100%;
-  min-height: 100vh;
   flex-direction: column;
   background-color: #000;
   color: #fff;
-  padding: 40px;
+  padding: 20px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -28,7 +27,6 @@ body {
   padding: 8px;
   background-color: #1f1f1f;
   width: 100%;
-  margin-bottom: 20px;
   border-radius: 5px;
   overflow: hidden;
 }
