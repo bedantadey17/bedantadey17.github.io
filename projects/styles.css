@@ -205,21 +205,15 @@ header a:focus {
   background-color: #ddd;
 }
 
-/* Arrange cards for desktop view */
+/* DESKTOP */
 @media only screen and (min-width: 1024px) {
   .project-cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* Arrange cards for tablet view */
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
-  .project-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-/* Arrange cards for mobile view */
+/* MOBILE */
 @media only screen and (max-width: 767px) {
   .project-cards {
     grid-template-columns: 1fr;
