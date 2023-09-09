@@ -13,12 +13,26 @@
 	<h1>Minecraft Head Viewer</h1>
 	<br>
 	<input type="text" id="mc-username" placeholder="Enter Username / UUID">
-	<button onclick="showHead()">Show Head</button>
-	<button onclick="showSkull()">Show Head (No Overlay)</button>
-    <br>
-	<div id="mc-head"></div>
+	<input type="text" id="mc-size" placeholder="Enter Size (Rec: 150)">
+	<div id="show-buttons">
+    	<div id="button-container">
+        	<button onclick="showHead()">Show Head (With Layer)</button>
+        	<button onclick="showHeadNaked()">Show Head (No Layer)</button>
+    	</div>
+	</div>
+	<div id="show-buttons">
+    	<div id="button-container">
+        	<button onclick="showSkull()">Show Skull (With Layer)</button>
+			<button onclick="showSkullNaked()">Show Skull (No Layer)</button>
+			
+    	</div>
+	</div>
+	<br>
+	<div id="mc-head" style="background-image: url('https://mc-heads.net/avatar/thisnameisverylongsonoonetakesit/$150');"></div>
+	<br>
 	<button id="save-button" onclick="saveImage()">Save Image</button>
-	<div id="footer">Made by Bedanta Dey and the <a href="https://minotar.net">Minotar API</a> | Supports Java Edition only! | Background image <a href="https://wallpaperaccess.com/full/2984677.png" target="_blank">here</a>.</div>
+
+	<div id="footer">Made by Bedanta Dey and <a href="https://mc-heads.net">MCHeads</a> | Supports Java Edition only!</div>
 	<script src="script.js"></script>
 </body>
 </html>

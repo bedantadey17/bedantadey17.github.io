@@ -1,105 +1,118 @@
 body {
-    background-image: url('/images/bg_mcheads.webp');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    color: #f0f0f0;
-    font-family: 'Press Start 2P', cursive;
-  }
-  
-  h1 {
-    font-weight: 600;
-    font-size: 36px;
-    margin: 20px 0;
-    text-align: center;
-  }
-  
-  p {
-    margin: 10px 0;
-    font-size: 20px;
-  }
+  background-image: url('/images/bg_mcheads.png');
+  background-attachment: fixed;
+  color: #f0f0f0;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
-  
-  #mc-username {
-    display: block;
-    margin: 0 auto;
-    font-family:'VT323', monospace;
-    width: 200px;
-    height: 30px;
-    font-size: 22px;
-    padding: 5px;
-    margin-bottom: 10px;
-    text-align: center;
-    border-radius: 5px;
-  }
-  
-  button {
-    display: block;
-    margin: 0 auto;
-    font-family:'VT323', monospace;
-    background-color: #ffffff;
-    color: #242323;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 8px 16px;
-    cursor: pointer;
-    margin-bottom: 10px;
-  }
-  button:hover {
-    background-color:#ccc;
-    transition: background-color 0.3s ease;
-  }
-  button:active {
-    background-color: #008cff;
-    box-shadow: 0 0 5px #008cff;
-  }
-  
-  
-  #mc-head {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    background-size: cover;
-    background-position: center;
-    margin-top: 20px;
-    border: 5px solid #008cff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #008cff;
-  }
-  
-  #save-button {
-    display: none;
-    background-color: #fff;
-    margin: 10px auto;
-    padding: 8px 16px;
-    border-radius: 5px;
-    border: none;
-    color: #000;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  #save-button:hover {
-    background-color:#ccc;
-    transition: background-color 0.3s ease;
-  }
-  #save-button:active {
-    background-color: #008cff;
-    box-shadow: 0 0 5px #008cff;
-  }
-  
-  #show-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  #footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 10px;
-    font-size: 10px;
-    color: #ccc;
-  }
-  
+h1 {
+  font-weight: 600;
+  font-size: 36px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+#mc-username,
+#mc-size {
+  display: block;
+  margin: 0 auto;
+  font-family: 'VT323', monospace;
+  width: 200px;
+  height: 30px;
+  font-size: 22px;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+button {
+  font-family: 'VT323', monospace;
+  background-color: #ffffff;
+  color: #242323;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:last-child {
+  margin-right: 0;
+}
+
+button:last-child {
+  margin-right: 0; 
+}
+
+button:hover {
+  background-color: #ccc;
+  transition: background-color 0.3s ease;
+}
+
+button:active {
+  background-color: #c9a158;
+  box-shadow: 0 0 5px #c9a158;
+}
+
+#mc-head {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  border: 5px solid #c9a158;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #c9a158;
+}
+
+#save-button {
+  display: block;
+  background-color: #fff;
+  margin: 10px auto;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#save-button:hover {
+  background-color: #ccc;
+  transition: background-color 0.3s ease;
+}
+
+#save-button:active {
+  background-color: #c9a158;
+  box-shadow: 0 0 5px #c9a158;
+}
+
+#show-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  font-size: 10px;
+  color: #ccc;
+}
