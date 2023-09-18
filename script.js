@@ -77,6 +77,7 @@ document.addEventListener('mousemove', (e)=>{
     let locX = e.clientX;
     let locY = e.clientY;
     let mouse = document.getElementById("mou");
-    mouse.style.left = locX + "px";
-    mouse.style.top = locY + "px" 
+    // mouse.style.left = locX + "px";
+    // mouse.style.top = locY + "px"
+    mouse.animate({ left: `${locX}px`, top: `${locY}px` }, {duration: 0.1 * 1000, fill: "forwards"})
 })
