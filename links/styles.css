@@ -75,6 +75,7 @@ main {
 h2 {
   font-size: 35px;
   margin-bottom: 10px;
+  margin-top: -20px;
   font-family: 'Ubuntu Mono', monospace;
 }
 
@@ -202,33 +203,13 @@ p a:focus {
   color: white;
 }
 
-.link-button.github:hover {
-  background-color: #333;
-  color: white;
-}
-
 .link-button.steam:hover {
   background-color: #1b2838;
   color: white;
 }
 
-.link-button.instagram:hover {
-  background-color: #c32aa3;
-  color: white;
-}
-
-.link-button.youtube:hover {
-  background-color: #ff0000;
-  color: white;
-}
-
-.link-button.discord:hover {
-  background-color: #5865F2;
-  color: white;
-}
-
-.link-button.duolingo:hover {
-  background-color: #58cc02;
+.link-button.namemc:hover {
+  background-color:  #5E9D34;
   color: white;
 }
 
@@ -237,10 +218,17 @@ p a:focus {
   color: white;
 }
 
-.link-button.namemc:hover {
-  background-color:  #5E9D34;
+.link-button.instagram:hover {
+  background-color: #c32aa3;
   color: white;
 }
+
+
+.link-button.reddit:hover {
+  background-color: #ff4500;
+  color: white;
+}
+
 
 
 @media screen and (max-width: 768px) {

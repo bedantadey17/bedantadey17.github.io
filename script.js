@@ -1,4 +1,4 @@
-console.log("Good morning/day/evening!\nWe're running on version: 1.4.8")
+console.log("Good morning/day/evening!\nWe're running on version: 1.5")
 console.log("Made by Bedanta Dey.")
 
 
@@ -40,29 +40,6 @@ const where = {
   second: "2-digit",
   dayPeriod: "short"
 };
-
-// FRIEND COPY
-
-document.addEventListener('DOMContentLoaded', () => {
-  const friendButtons = document.querySelectorAll('.friend-button');
-
-  friendButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const discordId = button.dataset.discordId;
-      copyToClipboard(discordId);
-      alert(`Copied Discord username: ${discordId}`);
-    });
-  });
-});
-
-function copyToClipboard(text) {
-  const textarea = document.createElement('textarea');
-  textarea.value = text;
-  document.body.appendChild(textarea);
-  textarea.select();
-  document.execCommand('copy');
-  document.body.removeChild(textarea);
-}
 
 
 // MOUSE MOVE
