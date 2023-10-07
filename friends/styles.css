@@ -11,7 +11,7 @@ body {
 }
 
 .dark-mode {
-  background-image: url("/images/background_light.png");
+  background-image: url("/images/background_halloween.png");
   background-size: contain;
   background-repeat: repeat;
   background-attachment: fixed;

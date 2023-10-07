@@ -1,4 +1,4 @@
-console.log("Good morning/day/evening!\nWe're running on version: 1.5")
+console.log("Good morning/day/evening!\nWe're running on version: 1.6")
 console.log("Made by Bedanta Dey.")
 
 
@@ -17,29 +17,29 @@ darkModeToggle.addEventListener('click', () => {
   localStorage.setItem('darkMode', isDarkMode);
 });
 
-// TIME
-document.addEventListener("DOMContentLoaded", () => {
-  const currentTime = document.getElementById("currentTime");
-  const timeDisplay = document.getElementById("timeDisplay");
+// // TIME
+// document.addEventListener("DOMContentLoaded", () => {
+//   const currentTime = document.getElementById("currentTime");
+//   const timeDisplay = document.getElementById("timeDisplay");
 
-  function updateTime() {
-    const time = new Date();
-    const formattedTime = Intl.DateTimeFormat("en-US", where).format(time);
-    timeDisplay.textContent = '-- Time for me: '+ formattedTime + ' --';
-  }
+//   function updateTime() {
+//     const time = new Date();
+//     const formattedTime = Intl.DateTimeFormat("en-US", where).format(time);
+//     timeDisplay.textContent = '-- Time for me: '+ formattedTime + ' --';
+//   }
 
-  updateTime();
-  setInterval(updateTime, 1000);
-});
+//   updateTime();
+//   setInterval(updateTime, 1000);
+// });
 
-const where = {
-  timeZone: "Asia/Calcutta",
-  hour12: true,
-  hour: "2-digit",
-  minute: "2-digit",
-  second: "2-digit",
-  dayPeriod: "short"
-};
+// const where = {
+//   timeZone: "Asia/Calcutta",
+//   hour12: true,
+//   hour: "2-digit",
+//   minute: "2-digit",
+//   second: "2-digit",
+//   dayPeriod: "short"
+// };
 
 
 // MOUSE MOVE

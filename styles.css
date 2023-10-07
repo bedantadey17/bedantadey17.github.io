@@ -4,14 +4,14 @@ body {
     background-size: contain;
     background-repeat: repeat; 
     background-attachment: fixed;
-    color: #fff;
+    color: #ffffff;
     padding: 20px;
     margin: 0;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   
   .dark-mode {
-    background-image: url("images/background_light.png");
+    background-image: url("images/background_halloween.png");
     background-size: contain;
     background-repeat: repeat;
     background-attachment: fixed;
