@@ -70,7 +70,7 @@ body {
 }
 
 /* CONTACT PILL */
-.contact-pill {
+.pill {
     display: inline-block;
     padding: 10px 20px;
     background-color: #575B65;
@@ -82,10 +82,27 @@ body {
     font-family: 'Fira Mono', monospace;
 }
 
-.contact-pill:hover {
+.pill:hover {
     background-color: #656870;
 }
 
+
+/* PROJECT BUTTON */
+
+.project-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #575B65; 
+    color: #E3E3E3;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.project-button:hover {
+    background-color: #656870; 
+}
 
 
 /* BOX 2 */
@@ -93,7 +110,8 @@ body {
     background-color: #3C414D; 
     border-radius: 25px;
     padding: 20px;
-    margin-top: 30px; 
+    margin-top: 20px; 
+    margin-bottom:1px;
 }
 
 /* ICONS */
@@ -122,10 +140,11 @@ body {
 /* (PHONE VERSION) */
 @media (max-width: 768px) {
     .container {
-        width: 280px; /* Adjust the width for smaller screens */
-        margin: 10px; /* Reduce margin for smaller screens */
+        width: 280px;
+        margin: 10px;
     }
     .icon-container {
         gap: 3px;
     }
 }
+
