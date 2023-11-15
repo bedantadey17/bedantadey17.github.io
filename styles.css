@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('images/background.jpg'); 
+    background-image: url('images/background.avif'); 
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 
@@ -89,6 +89,11 @@ body {
 
 /* PROJECT BUTTON */
 
+.project-buttons {
+    display: flex;
+    justify-content: space-between; 
+}
+
 .project-button {
     display: inline-block;
     padding: 10px 20px;
@@ -100,9 +105,11 @@ body {
     margin-top: 15px;
 }
 
+
 .project-button:hover {
     background-color: #656870; 
 }
+
 
 
 /* BOX 2 */
