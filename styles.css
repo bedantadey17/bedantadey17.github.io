@@ -19,7 +19,8 @@ body {
 .container {
     width: 350px;
     height: auto;
-    background-color: #424752;
+    background-image: url('images/box1bg.png');
+    background-size: cover;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
@@ -73,7 +74,7 @@ body {
 /* CONTACT PILL */
 .pill {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 20px;
     background-color: #575B65;
     color: #E3E3E3;
     border-radius: 25px;
@@ -88,38 +89,13 @@ body {
 }
 
 
-/* PROJECT BUTTON */
-
-.project-buttons {
-    display: flex;
-    justify-content: space-between; 
-}
-
-.project-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #575B65; 
-    color: #E3E3E3;
-    border-radius: 25px;
-    text-decoration: none;
-    font-size: 14px;
-    margin-top: 15px;
-}
-
-
-.project-button:hover {
-    background-color: #656870; 
-}
-
-
-
 /* BOX 2 */
 .bottom-container {
-    background-color: #3C414D; 
+    background-color: rgba(54, 65, 77, .5); 
     border-radius: 25px;
     padding: 20px;
     margin-top: 20px; 
-    margin-bottom:1px;
+    margin-bottom: 1px;
 }
 
 /* ICONS */
@@ -156,3 +132,28 @@ body {
     }
 }
 
+
+
+
+/* PROJECT BUTTON
+
+.project-buttons {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.project-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #575B65; 
+    color: #E3E3E3;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+
+.project-button:hover {
+    background-color: #656870; 
+} */
