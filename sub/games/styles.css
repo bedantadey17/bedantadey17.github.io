@@ -101,14 +101,3 @@ a:visited {
     color: #E3E3E3; /* Visited link color */
 }
 
-
-/* Media Query for smaller screens */
-@media (max-width: 768px) {
-    .container {
-        width: 280px;
-        margin: 10px;
-    }
-    .icon-container {
-        gap: 3px;
-    }
-}
