@@ -1,0 +1,104 @@
+body {
+    /*THE FUCK IS THIS IMAGE NOMENCLATURE PLS FIX*/
+    background-image: url('/images/backgroundimg.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fira Mono', monospace;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    font-family: 'Fira Mono', monospace;
+    height:30px;
+    /* padding: 5px; */
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px 20px;
+    background-color: #575B65;
+    color: #E3E3E3;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #656870;
+}
+
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Three columns per row */
+    grid-gap: 20px; /* Gap between grid items */
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    max-height:300px;
+    display: block;
+}
+
+.caption-container {
+    position: relative;
+}
+
+.caption {
+    padding: 6px;
+    text-align: center;
+    color: #fff;
+    font-size: 12.5px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Background color for caption */
+}
+
+a {
+    color: #E3E3E3; /* Visited link color */
+}
+
+a:visited {
+    color: #E3E3E3; /* Visited link color */
+}
+

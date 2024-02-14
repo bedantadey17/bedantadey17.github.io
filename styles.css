@@ -143,10 +143,10 @@ body {
     background-color: #656870; 
 }
 
-/* LAYOUT FIX */
+
 
 /* (PHONE VERSION) */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .container {
         width: 280px;
         margin: 10px;
@@ -154,4 +154,4 @@ body {
     .icon-container {
         gap: 3px;
     }
-}
+} */
