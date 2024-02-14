@@ -121,21 +121,6 @@ body {
     background-color: #656870;
 }
 
-/* (PHONE VERSION) */
-@media (max-width: 768px) {
-    .container {
-        width: 280px;
-        margin: 10px;
-    }
-    .icon-container {
-        gap: 3px;
-    }
-}
-
-
-
-
-/* PROJECT BUTTON
 
 .project-buttons {
     display: flex;
@@ -156,4 +141,17 @@ body {
 
 .project-button:hover {
     background-color: #656870; 
-} */
+}
+
+/* LAYOUT FIX */
+
+/* (PHONE VERSION) */
+@media (max-width: 768px) {
+    .container {
+        width: 280px;
+        margin: 10px;
+    }
+    .icon-container {
+        gap: 3px;
+    }
+}
