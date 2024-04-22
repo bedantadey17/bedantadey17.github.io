@@ -1,8 +1,10 @@
+/* IMAGES BACKGROUNDS FROM CATPPUCCIN REPO*/
+
 body {
     margin: 0;
     padding: 0;
     /*THE FUCK IS THIS IMAGE NOMENCLATURE PLS FIX*/
-    background-image: url('images/background.jpeg'); 
+    background-image: url('images/cat-waves.png'); 
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 
@@ -20,12 +22,13 @@ body {
     width: 350px;
     height: auto;
     background-image: url('images/box1bg.png');
+    opacity: 0.98;
     background-size: cover;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
     position: relative;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 20px 0px rgb(30, 30, 46);
     padding: 30px;
 }
 
@@ -36,12 +39,11 @@ body {
     align-items: flex-start;
     width: 100px;
     height: 100px;
-    background-color: #fff;
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 20px;
     margin-left: -5px;
-    border: 5px solid #E3E3E3;
+    border: 5px solid #b4befe;
 }
 
 .avatar {
@@ -53,7 +55,7 @@ body {
 /* HI MESSAGE */
 .greeting {
     text-align: left;
-    color: #fff;
+    color: #cdd6f4;
     font-size: 40px;
     margin: 0;
     margin-bottom: 10px;
@@ -63,7 +65,7 @@ body {
 /* ACTUAL TEXT */
 .details {
     text-align: left;
-    color: #F9F9FA;
+    color: #c6d0f5;
     font-size: 14px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -75,8 +77,8 @@ body {
 .pill {
     display: inline-block;
     padding: 12px 20px;
-    background-color: #575B65;
-    color: #E3E3E3;
+    background-color: #45475a;
+    color: #c6d0f5;
     border-radius: 25px;
     text-decoration: none;
     font-size: 14px;
@@ -85,13 +87,13 @@ body {
 }
 
 .pill:hover {
-    background-color: #656870;
+    background-color: #585b70;
 }
 
 
 /* BOX 2 */
 .bottom-container {
-    background-color: rgba(54, 65, 77, .5); 
+    background-color: rgb(127, 132, 156, 0.3); 
     border-radius: 25px;
     padding: 20px;
     margin-top: 20px; 
@@ -111,14 +113,14 @@ body {
     align-items: center;
     width: 40px;
     height: 40px;
-    background-color: #515661;
+    background-color: #45475a;
     border-radius: 50%; 
     text-decoration: none; 
-    color: #fff; 
+    color: #c6d0f5; 
 }
 
 .icon-circle:hover {
-    background-color: #656870;
+    background-color: #585b70;
 }
 
 
@@ -130,8 +132,8 @@ body {
 .project-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #575B65; 
-    color: #E3E3E3;
+    background-color: #45475a; 
+    color: #c6d0f5;
     border-radius: 25px;
     text-decoration: none;
     font-size: 14px;
@@ -140,7 +142,7 @@ body {
 
 
 .project-button:hover {
-    background-color: #656870; 
+    background-color: #585b70; 
 }
 
 

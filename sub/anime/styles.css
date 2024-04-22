@@ -1,6 +1,6 @@
 body {
     /*THE FUCK IS THIS IMAGE NOMENCLATURE PLS FIX*/
-    background-image: url('/images/backgroundimg.jpg'); 
+    background-image: url('/images/gamebg.png'); 
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 
@@ -18,18 +18,18 @@ body {
 
 h1 {
     font-family: 'Josefin Sans', sans-serif;
-    color: #fff;
+    color: #d5dcf3;
     font-size: 27px;
     margin-bottom: 20px;
 }
 
 h2 {
-    color: #fff;
+    color: #d5dcf3;
     margin-bottom: 20px;
 }
 
 p {
-    color: #fff;
+    color: #d5dcf3;
     font-size: 15px;
     margin-bottom: 20px;
 }
@@ -41,10 +41,10 @@ input[type="text"] {
     width: 100%;
     margin-bottom: 20px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #d5dcf3;
 }
 
-button {
+/* button {
     font-family: 'Josefin Sans', sans-serif;
     padding: 10px 20px;
     background-color: #575B65;
@@ -53,11 +53,11 @@ button {
     border-radius: 25px;
     font-size: 16px;
     cursor: pointer;
-}
+} */
 
-button:hover {
+/* button:hover {
     background-color: #656870;
-}
+} */
 
 
 
@@ -88,17 +88,17 @@ button:hover {
 .caption {
     padding: 6px;
     text-align: center;
-    color: #fff;
+    color: #d5dcf3;
     font-size: 12.5px;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.5); /* Background color for caption */
 }
 
 a {
-    color: #E3E3E3; /* Visited link color */
+    color: #d5dcf3; /* Visited link color */
 }
 
 a:visited {
-    color: #E3E3E3; /* Visited link color */
+    color: #d5dcf3; /* Visited link color */
 }
 
