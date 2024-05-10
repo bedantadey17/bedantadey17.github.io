@@ -145,6 +145,14 @@ body {
     background-color: #585b70; 
 }
 
+a {
+    color: #d5dcf3; /* Visited link color */
+}
+
+a:visited {
+    color: #d5dcf3; /* Visited link color */
+}
+
 
 
 /* (PHONE VERSION) */
