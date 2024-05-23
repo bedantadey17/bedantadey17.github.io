@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     /*THE FUCK IS THIS IMAGE NOMENCLATURE PLS FIX*/
-    background-image: url('/images/mdbr_gap_blu.png'); 
+    background-image: url('/images/donatepage_bg.png'); 
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 
@@ -21,7 +21,7 @@ body {
 .container {
     width: 450px;
     height: auto;
-    background-image: url('/images/box1bg.png');
+    background-image: url('/images/box_bg.png');
     opacity: 0.98;
     background-size: cover;
     border-radius: 50px;

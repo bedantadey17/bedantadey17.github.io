@@ -1,10 +1,8 @@
-/* IMAGES BACKGROUNDS FROM CATPPUCCIN REPO*/
-
+/* Global Styles */
 body {
     margin: 0;
     padding: 0;
-    /*THE FUCK IS THIS IMAGE NOMENCLATURE PLS FIX*/
-    background-image: url('images/cat-waves.png'); 
+    background-image: url('images/homepage_bg.png');
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 
@@ -15,13 +13,11 @@ body {
     font-family: 'Fira Mono', monospace;
 }
 
-
-
-/* BOX 1*/
+/* Box Styles */
 .container {
-    width: 350px;
+    width: 341px;
     height: auto;
-    background-image: url('images/box1bg.png');
+    background-image: url('images/box_bg.png');
     opacity: 0.98;
     background-size: cover;
     border-radius: 50px;
@@ -32,7 +28,7 @@ body {
     padding: 30px;
 }
 
-/* AVATAR */
+/* Avatar Styles */
 .avatar-container {
     display: flex;
     justify-content: flex-start;
@@ -52,7 +48,7 @@ body {
     object-fit: cover;
 }
 
-/* HI MESSAGE */
+/* Text Styles */
 .greeting {
     text-align: left;
     color: #cdd6f4;
@@ -62,7 +58,6 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-/* ACTUAL TEXT */
 .details {
     text-align: left;
     color: #c6d0f5;
@@ -73,7 +68,9 @@ body {
     font-family: 'Fira Mono', monospace;
 }
 
-/* CONTACT PILL */
+/* Pill Styles */
+/* Add animations, hover effects, and shadows to the pill button */
+
 .pill {
     display: inline-block;
     padding: 12px 20px;
@@ -84,23 +81,27 @@ body {
     font-size: 14px;
     width: fit-content;
     font-family: 'Fira Mono', monospace;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .pill:hover {
     background-color: #585b70;
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
 }
 
 
-/* BOX 2 */
+/* Container Styles */
 .bottom-container {
-    background-color: rgb(127, 132, 156, 0.3); 
+    background-color: rgba(127, 132, 156, 0.3); 
     border-radius: 25px;
     padding: 20px;
     margin-top: 20px; 
     margin-bottom: 1px;
 }
 
-/* ICONS */
+/* Icon Styles */
 .icon-container {
     display: flex;
     justify-content: space-around;
@@ -116,19 +117,21 @@ body {
     background-color: #45475a;
     border-radius: 50%; 
     text-decoration: none; 
-    color: #c6d0f5; 
+    color: #c6d0f5;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .icon-circle:hover {
     background-color: #585b70;
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Project Button Styles */
+/* Add animations, hover effects, and shadows to buttons */
 
-.project-buttons {
-    display: flex;
-    justify-content: space-between; 
-}
-
+/* Project Buttons */
 .project-button {
     display: inline-block;
     padding: 10px 20px;
@@ -138,25 +141,29 @@ body {
     text-decoration: none;
     font-size: 14px;
     margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 .project-button:hover {
     background-color: #585b70; 
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
 }
 
+
+/* Link Styles */
 a {
-    color: #d5dcf3; /* Visited link color */
+    color: #d5dcf3; /* Link color */
 }
 
 a:visited {
     color: #d5dcf3; /* Visited link color */
 }
 
-
-
-/* (PHONE VERSION) */
-/* @media (max-width: 768px) {
+/* Media Query */
+/* Uncomment and modify media query for smaller screens */
+/*@media (max-width: 768px) {
     .container {
         width: 280px;
         margin: 10px;
@@ -164,4 +171,4 @@ a:visited {
     .icon-container {
         gap: 3px;
     }
-} */
+}*/
