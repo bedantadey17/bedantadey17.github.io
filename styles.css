@@ -59,6 +59,7 @@ body {
     white-space: pre-wrap;
     color: #ffffff;
     line-height: 1.2;
+    font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 .ascii-art {
