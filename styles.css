@@ -1,174 +1,104 @@
-/* Global Styles */
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url('images/homepage_bg.png');
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: 'Fira Mono', monospace;
+    margin: 0;
+    background-color: #0c0c13;
+    font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    font-size: 14px;
+    color: #cdd6f4;
 }
 
-/* Box Styles */
-.container {
-    width: 341px;
-    height: auto;
-    background-image: url('images/box_bg.png');
-    opacity: 0.98;
-    background-size: cover;
-    border-radius: 50px;
+.window {
+    width: 80%;
+    max-width: 1000px;
+    height: 85%;
+    background-color: #21242b;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
-    position: relative;
-    box-shadow: 0px 0px 20px 0px rgb(30, 30, 46);
-    padding: 30px;
-}
-
-/* Avatar Styles */
-.avatar-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 20px;
-    margin-left: -5px;
-    border: 5px solid #b4befe;
 }
 
-.avatar {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Text Styles */
-.greeting {
-    text-align: left;
-    color: #cdd6f4;
-    font-size: 40px;
-    margin: 0;
-    margin-bottom: 10px;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-.details {
-    text-align: left;
-    color: #c6d0f5;
-    font-size: 14px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    line-height: 2;
-    font-family: 'Fira Mono', monospace;
-}
-
-/* Pill Styles */
-/* Add animations, hover effects, and shadows to the pill button */
-
-.pill {
-    display: inline-block;
-    padding: 12px 20px;
-    background-color: #45475a;
-    color: #c6d0f5;
-    border-radius: 25px;
-    text-decoration: none;
-    font-size: 14px;
-    width: fit-content;
-    font-family: 'Fira Mono', monospace;
-    transition: all 0.3s ease;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.pill:hover {
-    background-color: #585b70;
-    transform: translateY(-3px);
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
-}
-
-
-/* Container Styles */
-.bottom-container {
-    background-color: rgba(127, 132, 156, 0.3); 
-    border-radius: 25px;
-    padding: 20px;
-    margin-top: 20px; 
-    margin-bottom: 1px;
-}
-
-/* Icon Styles */
-.icon-container {
+.window-header {
     display: flex;
-    justify-content: space-around;
-    gap: 15px;
-}
-
-.icon-circle {
-    display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    width: 40px;
-    height: 40px;
-    background-color: #45475a;
-    border-radius: 50%; 
-    text-decoration: none; 
-    color: #c6d0f5;
-    transition: all 0.3s ease;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    background-color: #13131d;
 }
 
-.icon-circle:hover {
-    background-color: #585b70;
-    transform: translateY(-3px);
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+.buttons {
+    display: flex;
+    gap: 8px;
 }
 
-/* Project Button Styles */
-/* Add animations, hover effects, and shadows to buttons */
-
-/* Project Buttons */
-.project-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #45475a; 
-    color: #c6d0f5;
-    border-radius: 25px;
-    text-decoration: none;
-    font-size: 14px;
-    margin-top: 15px;
-    transition: all 0.3s ease;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+.button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
 }
 
-.project-button:hover {
-    background-color: #585b70; 
-    transform: translateY(-3px);
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+.close { background-color: #f38ba8; }
+.minimize { background-color: #f9e2af; }
+.maximize { background-color: #a6e3a1; }
+
+.window-content {
+    flex-grow: 1;
+    padding: 15px;
+    color: #ffffff;
+    background-color: #1e1e2e;
+    overflow-y: auto;
 }
 
+.terminal-content {
+    margin: 0;
+    white-space: pre-wrap;
+    color: #ffffff;
+    line-height: 1.2;
+}
 
-/* Link Styles */
+.ascii-art {
+    color: #89dceb;
+    font-size: 12px;
+}
+
 a {
-    color: #d5dcf3; /* Link color */
+    color: #89b4fa;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #c2d9fd;
 }
 
 a:visited {
-    color: #d5dcf3; /* Visited link color */
+    color: #89b4fa;
 }
 
-/* Media Query */
-/* Uncomment and modify media query for smaller screens */
-/*@media (max-width: 768px) {
-    .container {
-        width: 280px;
-        margin: 10px;
+a:visited:hover {
+    color: #c2d9fd;
+}
+
+@keyframes cursor-blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.cursor {
+    display: inline-block;
+    width: 6px;
+    height: 2px;
+    background-color: #ffffff;
+    animation: cursor-blink 1s infinite;
+}
+
+@media screen and (max-width: 768px) {
+    .ascii-art {
+        display: none;
     }
-    .icon-container {
-        gap: 3px;
-    }
-}*/
+}
