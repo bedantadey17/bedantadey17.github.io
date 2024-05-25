@@ -1,19 +1,29 @@
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100vh;
     margin: 0;
     background-color: #0c0c13;
     font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
     font-size: 14px;
     color: #cdd6f4;
+    padding-top: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .window {
-    width: 80%;
+    width: 70%;
     max-width: 1000px;
-    height: 85%;
+    height: 98%;
     background-color: #21242b;
     border: 1px solid #d0d0d0;
     border-radius: 5px;
@@ -21,6 +31,8 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    margin-top: -40px;
+    margin-bottom: 20px;
 }
 
 .window-header {
@@ -74,14 +86,17 @@ a {
 
 a:hover {
     color: #c2d9fd;
+    text-decoration: underline;
 }
 
 a:visited {
     color: #89b4fa;
+    text-decoration: underline;
 }
 
 a:visited:hover {
     color: #c2d9fd;
+    text-decoration: underline;
 }
 
 @keyframes cursor-blink {
@@ -96,6 +111,22 @@ a:visited:hover {
     height: 2px;
     background-color: #ffffff;
     animation: cursor-blink 1s infinite;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.image-container img {
+    max-height: 50px;
+    border: 1px solid transparent;
+}
+
+.image-container img:hover {
+    border: 1px solid white;
 }
 
 @media screen and (max-width: 768px) {
