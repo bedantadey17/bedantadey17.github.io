@@ -18,6 +18,8 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .window {
@@ -86,17 +88,14 @@ a {
 
 a:hover {
     color: #c2d9fd;
-    text-decoration: underline;
 }
 
 a:visited {
     color: #89b4fa;
-    text-decoration: underline;
 }
 
 a:visited:hover {
     color: #c2d9fd;
-    text-decoration: underline;
 }
 
 @keyframes cursor-blink {
@@ -115,6 +114,7 @@ a:visited:hover {
 
 .image-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 10px 0;
@@ -130,7 +130,45 @@ a:visited:hover {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        padding-top: 10px;
+    }
+
+    .window {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
     .ascii-art {
         display: none;
+    }
+
+    .window-header {
+        justify-content: space-between;
+    }
+
+    .buttons {
+        gap: 4px;
+    }
+
+    .window-content {
+        padding: 10px;
+    }
+
+    .image-container {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .image-container a {
+        flex: 1 0 30%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-container img {
+        max-width: 100%;
     }
 }
