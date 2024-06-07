@@ -79,23 +79,31 @@ body {
 .ascii-art {
     color: #89dceb;
     font-size: 12px;
+    text-shadow: 0 0 10px #89b4fa;
 }
 
 a {
     color: #89b4fa;
     text-decoration: underline;
+    transition: text-shadow 0.2s ease, transform 0.2s ease;
 }
 
 a:hover {
     color: #c2d9fd;
+    text-shadow: 0 0 5px #c2d9fd;
+    transform: scale(1.05);
 }
 
 a:visited {
     color: #89b4fa;
+    text-decoration: underline;
+    transition: text-shadow 0.2s ease, transform 0.2s ease;
 }
 
 a:visited:hover {
     color: #c2d9fd;
+    text-shadow: 0 0 5px #c2d9fd;
+    transform: scale(1.05);
 }
 
 @keyframes cursor-blink {

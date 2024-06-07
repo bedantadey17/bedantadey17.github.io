@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotibridge</title>
+    <meta content="Spotibridge" property="og:title">
+    <meta content="Bridge/convert Spotify links to Apple Music/Amazon Music/YouTube links" property="og:description">
+    <link rel="icon" type="image/x-icon" href="static/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <pre class="ascii-art">
+   _________              __  ._____.         .__    .___              
+  /   _____/_____   _____/  |_|__\_ |_________|__| __| _/ ____   ____  
+  \_____  \\____ \ /  _ \   __\  || __ \_  __ \  |/ __ | / ___\_/ __ \ 
+  /        \  |_> >  <_> )  | |  || \_\ \  | \/  / /_/ |/ /_/  >  ___/ 
+ /_______  /   __/ \____/|__| |__||___  /__|  |__\____ |\___  / \___  >
+         \/|__|                       \/              \/_____/      \/  
+            </pre>
+            <span class="site-title">Spotibridge</span>
+        </h1>
+        <form id="linkForm">
+            <label for="spotifyLink">Drop your Spotify Link:</label>
+            <input type="text" id="spotifyLink" placeholder="open.spotify.com/track/...xyz">
+            <button type="submit">Let's Bridge!</button>
+        </form>
+        <div id="loading">Parsing link... Please wait...</div>
+        <div id="songName"></div>
+        <div id="results" class="results-row"></div>
+        <div class="footer-text">Created by <a href="https://itscosmo.live" target="_blank">Cosmo</a>, with AI</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
