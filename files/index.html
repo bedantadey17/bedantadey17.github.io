@@ -32,30 +32,12 @@
     <ul id="file-list"></ul>
 
     <script>
-        async function fetchAccessToken() {
-            try {
-                const response = await fetch('config.json');
-                if (!response.ok) {
-                    throw new Error('Failed to fetch access token');
-                }
-                const config = await response.json();
-                return config.accessToken;
-            } catch (error) {
-                console.error('Failed to fetch access token:', error);
-                return null;
-            }
-        }
-
         const repoOwner = 'bedantadey17';
         const repoName = 'filesystem';
 
-        async function fetchFolderContents(folderPath, accessToken) {
+        async function fetchFolderContents(folderPath) {
             try {
-                const response = await fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/contents/${folderPath}`, {
-                    headers: {
-                        Authorization: `token ${accessToken}`
-                    }
-                });
+                const response = await fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/contents/${folderPath}`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -66,19 +48,18 @@
             }
         }
 
-        async function generateFileList(folderPath, accessToken) {
-            const data = await fetchFolderContents(folderPath, accessToken);
+        async function generateFileList(folderPath) {
+            const data = await fetchFolderContents(folderPath);
             let htmlString = `<ul>`;
 
-            // Add ../ (Parent) link if not at the root folder
             if (folderPath !== '') {
-                const parentPath = folderPath.substring(0, folderPath.lastIndexOf('/')); // Get parent folder path
+                const parentPath = folderPath.substring(0, folderPath.lastIndexOf('/'));
                 htmlString += `<li><a href="#" onclick="loadSubfolder('${parentPath}')">../ (Parent)</a></li>`;
             }
 
             for (let item of data) {
                 if (item.name.toLowerCase() === 'readme.md') {
-                    continue; // Skip the README.md file
+                    continue;
                 }
 
                 if (item.type === 'dir') {
@@ -94,26 +75,14 @@
         }
 
         async function loadSubfolder(folderPath) {
-            const accessToken = await fetchAccessToken();
-            if (!accessToken) {
-                console.error('Access token not available');
-                return;
-            }
-
-            const fileListHtml = await generateFileList(folderPath, accessToken);
+            const fileListHtml = await generateFileList(folderPath);
             document.getElementById('file-list').innerHTML = fileListHtml;
             document.getElementById('title').innerText = `Index of ${folderPath}`;
         }
 
         (async () => {
             const rootFolder = '';
-            const accessToken = await fetchAccessToken();
-            if (!accessToken) {
-                console.error('Access token not available');
-                return;
-            }
-
-            const fileListHtml = await generateFileList(rootFolder, accessToken);
+            const fileListHtml = await generateFileList(rootFolder);
             document.getElementById('file-list').innerHTML = fileListHtml;
         })();
     </script>
