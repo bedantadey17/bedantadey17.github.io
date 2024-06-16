@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index of Files</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #0366d6;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Index of filesystem</h1>
+    <ul id="file-list"></ul>
+
+    <script>
+        async function fetchAccessToken() {
+            try {
+                const response = await fetch('config.json');
+                if (!response.ok) {
+                    throw new Error('Failed to fetch access token');
+                }
+                const config = await response.json();
+                return config.accessToken;
+            } catch (error) {
+                console.error('Failed to fetch access token:', error);
+                return null;
+            }
+        }
+
+        const repoOwner = 'bedantadey17';
+        const repoName = 'filesystem';
+
+        async function fetchFolderContents(folderPath, accessToken) {
+            try {
+                const response = await fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/contents/${folderPath}`, {
+                    headers: {
+                        Authorization: `token ${accessToken}`
+                    }
+                });
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return await response.json();
+            } catch (error) {
+                console.error('Failed to fetch folder contents:', error);
+                return [];
+            }
+        }
+
+        async function generateFileList(folderPath, accessToken) {
+            const data = await fetchFolderContents(folderPath, accessToken);
+            let htmlString = `<ul>`;
+
+            // Add ../ (Parent) link if not at the root folder
+            if (folderPath !== '') {
+                const parentPath = folderPath.substring(0, folderPath.lastIndexOf('/')); // Get parent folder path
+                htmlString += `<li><a href="#" onclick="loadSubfolder('${parentPath}')">../ (Parent)</a></li>`;
+            }
+
+            for (let item of data) {
+                if (item.name.toLowerCase() === 'readme.md') {
+                    continue; // Skip the README.md file
+                }
+
+                if (item.type === 'dir') {
+                    htmlString += `<li><a href="#" onclick="loadSubfolder('${item.path}')">${item.name}/</a></li>`;
+                } else {
+                    const rawUrl = `https://raw.githubusercontent.com/${repoOwner}/${repoName}/main/${item.path}`;
+                    htmlString += `<li><a href="${rawUrl}" download="${item.name}">${item.name}</a></li>`;
+                }
+            }
+
+            htmlString += `</ul>`;
+            return htmlString;
+        }
+
+        async function loadSubfolder(folderPath) {
+            const accessToken = await fetchAccessToken();
+            if (!accessToken) {
+                console.error('Access token not available');
+                return;
+            }
+
+            const fileListHtml = await generateFileList(folderPath, accessToken);
+            document.getElementById('file-list').innerHTML = fileListHtml;
+            document.getElementById('title').innerText = `Index of ${folderPath}`;
+        }
+
+        (async () => {
+            const rootFolder = '';
+            const accessToken = await fetchAccessToken();
+            if (!accessToken) {
+                console.error('Access token not available');
+                return;
+            }
+
+            const fileListHtml = await generateFileList(rootFolder, accessToken);
+            document.getElementById('file-list').innerHTML = fileListHtml;
+        })();
+    </script>
+</body>
+</html>
