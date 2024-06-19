@@ -4,10 +4,10 @@ body {
     align-items: flex-start;
     height: 100vh;
     margin: 0;
-    background-color: #0c0c13;
+    background-color: #1a1d2c;
     font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
     font-size: 14px;
-    color: #cdd6f4;
+    color: #CAD3F5;
     padding-top: 20px;
     box-sizing: border-box;
     flex-direction: column;
@@ -26,8 +26,8 @@ body {
     width: 70%;
     max-width: 1000px;
     height: 98%;
-    background-color: #21242b;
-    border: 1px solid #d0d0d0;
+    background-color: #363A4F;
+    border: 1px solid #ACB0BE;
     border-radius: 5px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
     display: flex;
@@ -42,7 +42,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     padding: 8px;
-    background-color: #13131d;
+    background-color: #1e2131;
 }
 
 .buttons {
@@ -56,53 +56,53 @@ body {
     border-radius: 50%;
 }
 
-.close { background-color: #f38ba8; }
-.minimize { background-color: #f9e2af; }
-.maximize { background-color: #a6e3a1; }
+.close { background-color: #ED8796; } 
+.minimize { background-color: #EED49F; } 
+.maximize { background-color: #A6DA95; } 
 
 .window-content {
     flex-grow: 1;
     padding: 15px;
-    color: #ffffff;
-    background-color: #1e1e2e;
+    color: #CAD3F5; 
+    background-color: #2B2E43; 
     overflow-y: auto;
 }
 
 .terminal-content {
     margin: 0;
     white-space: pre-wrap;
-    color: #ffffff;
+    color: #CAD3F5;
     line-height: 1.2;
     font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 .ascii-art {
-    color: #89dceb;
+    color: #8AADF4;
     font-size: 12px;
-    text-shadow: 0 0 10px #89b4fa;
+    text-shadow: 0 0 10px #8AADF4;
 }
 
 a {
-    color: #89b4fa;
+    color: #8AADF4; 
     text-decoration: underline;
     transition: text-shadow 0.2s ease, transform 0.2s ease;
 }
 
 a:hover {
-    color: #c2d9fd;
-    text-shadow: 0 0 5px #c2d9fd;
+    color: #CAD3F5; 
+    text-shadow: 0 0 5px #CAD3F5; 
     transform: scale(1.05);
 }
 
 a:visited {
-    color: #89b4fa;
+    color: #8AADF4; 
     text-decoration: underline;
     transition: text-shadow 0.2s ease, transform 0.2s ease;
 }
 
 a:visited:hover {
-    color: #c2d9fd;
-    text-shadow: 0 0 5px #c2d9fd;
+    color: #CAD3F5; 
+    text-shadow: 0 0 5px #CAD3F5; 
     transform: scale(1.05);
 }
 
@@ -116,7 +116,7 @@ a:visited:hover {
     display: inline-block;
     width: 6px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: #CAD3F5; 
     animation: cursor-blink 1s infinite;
 }
 
@@ -134,7 +134,7 @@ a:visited:hover {
 }
 
 .image-container img:hover {
-    border: 1px solid white;
+    border: 1px solid #CAD3F5;
 }
 
 @media screen and (max-width: 768px) {
