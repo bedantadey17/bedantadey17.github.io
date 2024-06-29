@@ -6,8 +6,8 @@ body {
   padding: 8px 16px;
   display: flex;
   flex-direction: column;
-  gap: 16px; 
-  font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  gap: 16px;
+  font-family: Consolas, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace;
 }
 
 header {
@@ -23,13 +23,15 @@ h2 {
   margin: 0;
 }
 
-a {
+a, a:visited {
   text-decoration: none;
   color: inherit;
+  position: relative;
+  transition: text-shadow 0.2s ease, transform 0.2s ease;
 }
 
-a:hover {
-  text-decoration: underline;
+a:hover, a:visited:hover {
+  text-shadow: 0 0 5px currentColor; 
 }
 
 nav {
@@ -39,14 +41,14 @@ nav {
 }
 
 main {
-  font-size: 14.4px; 
-  line-height: 24px; 
+  font-size: 14.4px;
+  line-height: 24px;
   flex: 1;
 }
 
 h1 {
   font-size: 40px;
-  margin-bottom: 16px; 
+  margin-bottom: 16px;
 }
 
 footer {
@@ -54,4 +56,72 @@ footer {
   color: #9ca3af;
   padding: 24px;
   font-size: 12px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* MOBILE SPECIFIC CHANGES */
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+    background: none;
+    border: none;
+    color: inherit;
+    margin-right: 16px;
+    z-index: 1000;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #1a1d2c;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+  }
+
+  nav.active {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  nav a, a:visited {
+    padding: 12px 0;
+    display: block;
+  }
+
+  nav a:hover, a:visited:hover {
+    text-shadow: 0 0 5px currentColor; 
+  }
+}
+
+/* SCROLLBAR UTILISATION */
+
+/* For WebKit-based browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1d2c;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  border-radius: 2px;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4b5563 #1a1d2c;
 }
