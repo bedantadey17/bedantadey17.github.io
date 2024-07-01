@@ -62,6 +62,12 @@ footer {
   display: none;
 }
 
+code {
+  color: #dadada;
+  background-color: black;
+  border-radius: 4px;
+}
+
 /* MOBILE SPECIFIC CHANGES */
 
 @media (max-width: 768px) {
